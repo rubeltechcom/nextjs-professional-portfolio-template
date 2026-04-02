@@ -437,7 +437,7 @@
                     }
                 },
                 {
-                    "id": 3,
+                    "id": 4,
                     "img": "images/flags/vi.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
@@ -467,7 +467,7 @@
                     }
                 },
                 {
-                    "id": 4,
+                    "id": 5,
                     "img": "images/flags/ko.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},

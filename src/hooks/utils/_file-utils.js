@@ -46,15 +46,17 @@ export const _fileUtils = {
      */
     resolvePath: (path) => {
         if(!path) return path
-        if(path.startsWith("http") || path.startsWith("data:")) return path
+        if(path.startsWith("http") || path.startsWith("data:") || path.startsWith("blob:")) return path
 
-        // Ensure path starts with / for consistent resolution on static hosts like Cloudflare
-        const normalizedPath = path.startsWith("/") ? path : `/${path}`
+        // Normalize path to start with /
+        let normalizedPath = path.startsWith("/") ? path : `/${path}`
         
-        // If BASE_URL is set, prepend it, otherwise use relative path from root
-        if (_fileUtils.BASE_URL) {
-            const fullPath = _fileUtils.BASE_URL + normalizedPath
-            return fullPath.replace(/(^|[^:])\/\//g, "$1/")
+        // If BASE_URL is set, prepend it
+        if (_fileUtils.BASE_URL && _fileUtils.BASE_URL !== "/") {
+            const baseUrl = _fileUtils.BASE_URL.endsWith("/") ? _fileUtils.BASE_URL.slice(0, -1) : _fileUtils.BASE_URL
+            const fullPath = `${baseUrl}${normalizedPath}`
+            // Remove double slashes except after protocol
+            return fullPath.replace(/([^:])\/\//g, "$1/")
         }
         
         return normalizedPath
