@@ -48,15 +48,8 @@ export const _fileUtils = {
         if(!path) return path
         if(path.startsWith("http") || path.startsWith("data:") || path.startsWith("blob:")) return path
 
-        // Ensure path starts with /
-        let normalizedPath = path.startsWith("/") ? path : `/${path}`
-        
-        // If BASE_URL is set, prepend it
-        if (_fileUtils.BASE_URL && _fileUtils.BASE_URL !== "/") {
-            const baseUrl = _fileUtils.BASE_URL.endsWith("/") ? _fileUtils.BASE_URL.slice(0, -1) : _fileUtils.BASE_URL
-            return `${baseUrl}${normalizedPath}`
-        }
-        
-        return normalizedPath
+        const baseUrl = _fileUtils.BASE_URL || "/"
+        const fullPath = baseUrl + (path.startsWith("/") ? path.slice(1) : path)
+        return fullPath.replace(/(^|[^:])\/\//g, "$1/")
     },
 }
