@@ -48,9 +48,15 @@ export const _fileUtils = {
         if(!path) return path
         if(path.startsWith("http") || path.startsWith("data:")) return path
 
-        const baseUrl = _fileUtils.BASE_URL || ""
+        // Ensure path starts with / for consistent resolution on static hosts like Cloudflare
         const normalizedPath = path.startsWith("/") ? path : `/${path}`
-        const fullPath = baseUrl + normalizedPath
-        return fullPath.replace(/(^|[^:])\/\//g, "$1/")
+        
+        // If BASE_URL is set, prepend it, otherwise use relative path from root
+        if (_fileUtils.BASE_URL) {
+            const fullPath = _fileUtils.BASE_URL + normalizedPath
+            return fullPath.replace(/(^|[^:])\/\//g, "$1/")
+        }
+        
+        return normalizedPath
     },
 }
