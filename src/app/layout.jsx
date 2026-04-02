@@ -1,8 +1,18 @@
 import "@/styles/app.scss"
-import { Inter } from 'next/font/google'
+import { Saira, Orbitron } from 'next/font/google'
 import ClientWrapper from "@/components/ClientWrapper.jsx"
 
-const inter = Inter({ subsets: ['latin'] })
+const saira = Saira({ 
+  subsets: ['latin'],
+  variable: '--font-saira',
+  display: 'swap',
+})
+
+const orbitron = Orbitron({ 
+  subsets: ['latin'],
+  variable: '--font-orbitron',
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Rubel Mondol | SEO Specialist Portfolio',
@@ -34,8 +44,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
-      <body className={inter.className} style={{ backgroundColor: '#111111' }}>
+    <html lang="en" className={`${saira.variable} ${orbitron.variable}`} data-scroll-behavior="smooth">
+      <body style={{ backgroundColor: '#111111' }}>
         <div id="root">
           <ClientWrapper>
             {children}

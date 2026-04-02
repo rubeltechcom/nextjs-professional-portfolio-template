@@ -244,8 +244,8 @@ div.modal {
     &-footer {
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: start;
+        justify-content: flex-start;
+        align-items: flex-start;
 
         color: var(--theme-texts-5);
         border-top: 1px solid var(--theme-standard-borders);

@@ -43,7 +43,7 @@ div.article-cards-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     background-color: var(--theme-boards-background);
     border-radius: $standard-border-radius;
     padding: var(--item-padding);

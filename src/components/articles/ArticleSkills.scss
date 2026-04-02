@@ -48,8 +48,8 @@ div.article-skills-items-3-per-row {
 
 div.article-skills-item {
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: flex-start;
     background-color: transparent;
     border-radius: $standard-border-radius;
     padding: var(--padding);
@@ -58,7 +58,7 @@ div.article-skills-item {
 div.article-skills-item-avatar-wrapper {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     min-width: var(--avatar-wrapper-width);
     width: var(--avatar-wrapper-width);
     height: 100%;
