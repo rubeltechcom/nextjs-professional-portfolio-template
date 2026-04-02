@@ -48,8 +48,16 @@ export const _fileUtils = {
         if(!path) return path
         if(path.startsWith("http") || path.startsWith("data:") || path.startsWith("blob:")) return path
 
-        const baseUrl = _fileUtils.BASE_URL || "/"
-        const fullPath = baseUrl + (path.startsWith("/") ? path.slice(1) : path)
-        return fullPath.replace(/(^|[^:])\/\//g, "$1/")
+        const baseUrl = _fileUtils.BASE_URL || ""
+        const cleanPath = path.startsWith("/") ? path.slice(1) : path
+        let fullPath = baseUrl ? `${baseUrl}/${cleanPath}` : `/${cleanPath}`
+        
+        // Replace double slashes but preserve protocol (e.g., https://)
+        if (fullPath.includes("://")) {
+            const [protocol, rest] = fullPath.split("://")
+            return protocol + "://" + rest.replace(/\/+/g, "/")
+        }
+        
+        return fullPath.replace(/\/+/g, "/")
     },
 }

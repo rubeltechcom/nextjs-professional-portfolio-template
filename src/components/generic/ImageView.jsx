@@ -1,63 +1,57 @@
 import "./ImageView.scss"
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import {useConstants} from "@/hooks/constants.js"
 import {Spinner} from "react-bootstrap"
 import {useUtils} from "@/hooks/utils.js"
 
-function ImageView({ src, alt = "", className = "", id= null, hideSpinner = false, style = null, onStatus = null }) {
+function ImageView({ src, alt = "", className = "", id = null, hideSpinner = false, style = null, onStatus = null }) {
     const [loadStatus, setLoadStatus] = useState(ImageView.LoadStatus.LOADING)
-    const [loadedSrc, setLoadedSrc] = useState(null)
-    const [errorSrc, setErrorSrc] = useState(null)
+    const utils = useUtils()
+    const resolvedSrc = utils.file.resolvePath(src)
 
-    /** @listens src **/
+    /** Reset status when src changes **/
     useEffect(() => {
-        if(src && src.length > 0) setLoadStatus(ImageView.LoadStatus.LOADING)
-        else setLoadStatus(ImageView.LoadStatus.ERROR)
+        if (!src) {
+            setLoadStatus(ImageView.LoadStatus.ERROR)
+        } else {
+            setLoadStatus(ImageView.LoadStatus.LOADING)
+        }
     }, [src])
 
-    /** @listens loadedSrc|errorSrc **/
+    /** Notify parent of status changes **/
     useEffect(() => {
-        if(loadedSrc && src === loadedSrc)
-            setLoadStatus(ImageView.LoadStatus.LOADED)
-        else if(errorSrc && src === errorSrc)
-            setLoadStatus(ImageView.LoadStatus.ERROR)
-        else if(src && src.length > 0)
-            setLoadStatus(ImageView.LoadStatus.LOADING)
-    }, [loadedSrc, errorSrc])
+        if (onStatus) {
+            onStatus(loadStatus)
+        }
+    }, [loadStatus, onStatus])
 
-    /** @listens loadStatus **/
-    useEffect(() => {
-        onStatus && onStatus(loadStatus)
-    }, [loadStatus])
+    const _onLoad = () => {
+        setLoadStatus(ImageView.LoadStatus.LOADED)
+    }
+
+    const _onError = () => {
+        setLoadStatus(ImageView.LoadStatus.ERROR)
+    }
 
     const spinnerVisible = loadStatus === ImageView.LoadStatus.LOADING && !hideSpinner
     const containerVisible = loadStatus === ImageView.LoadStatus.LOADED
     const errorVisible = loadStatus === ImageView.LoadStatus.ERROR
 
-    const _onLoad = () => {
-        setLoadedSrc(src)
-        setErrorSrc(null)
-    }
-
-    const _onError = () => {
-        setLoadedSrc(null)
-        setErrorSrc(src)
-    }
-
     return (
-        <div className={`image-view ${className}`}
-             id={id}
-             style={style}>
-            <ImageViewContainer src={src}
-                                alt={alt}
-                                visible={containerVisible}
-                                loadStatus={loadStatus}
-                                onLoad={_onLoad}
-                                onError={_onError}/>
+        <div className={`image-view ${className}`} id={id} style={style}>
+            {src && (
+                <ImageViewContainer 
+                    src={resolvedSrc}
+                    alt={alt}
+                    visible={containerVisible}
+                    loadStatus={loadStatus}
+                    onLoad={_onLoad}
+                    onError={_onError}
+                />
+            )}
 
-            <ImageViewSpinner visible={spinnerVisible}/>
-            <ImageViewError visible={errorVisible}
-                            hideIcon={hideSpinner}/>
+            <ImageViewSpinner visible={spinnerVisible} />
+            <ImageViewError visible={errorVisible} hideIcon={hideSpinner} />
         </div>
     )
 }
@@ -70,56 +64,39 @@ ImageView.LoadStatus = {
 
 function ImageViewContainer({ src, alt, visible, loadStatus, onLoad, onError }) {
     const constants = useConstants()
-    const utils = useUtils()
-    const imgRef = React.useRef(null)
-
-    const resolvedSrc = utils.file.resolvePath(src)
     const visibleClass = visible ? `visible` : `invisible`
 
-    React.useEffect(() => {
-        if (imgRef.current && imgRef.current.complete) {
-            if (imgRef.current.naturalWidth > 0) {
-                onLoad && onLoad()
-            } else {
-                onError && onError()
-            }
-        }
-    }, [resolvedSrc])
-
     return (
-        <img ref={imgRef}
-             className={`image-view-img ${visibleClass} ${constants.HTML_CLASSES.imageView} ${constants.HTML_CLASSES.imageView}-${loadStatus}`}
-             src={resolvedSrc}
-             alt={alt}
-             referrerPolicy="no-referrer"
-             onLoad={onLoad}
-             onError={onError}/>
+        <img 
+            key={src}
+            className={`image-view-img ${visibleClass} ${constants.HTML_CLASSES.imageView} ${constants.HTML_CLASSES.imageView}-${loadStatus}`}
+            src={src}
+            alt={alt}
+            referrerPolicy="no-referrer"
+            onLoad={onLoad}
+            onError={onError}
+        />
     )
 }
 
 function ImageViewSpinner({ visible }) {
-    if(!visible)
-        return <></>
+    if (!visible) return null
 
     return (
-        <div className={`image-view-spinner-wrapper`}>
-            <Spinner/>
+        <div className="image-view-spinner-wrapper">
+            <Spinner animation="border" />
         </div>
     )
 }
 
 function ImageViewError({ visible, hideIcon }) {
-    if(!visible)
-        return <></>
+    if (!visible) return null
 
     return (
-        <div className={`image-view-error-wrapper`}>
-            {!hideIcon && (
-                <i className={`fa-solid fa-eye-slash`}/>
-            )}
+        <div className="image-view-error-wrapper">
+            {!hideIcon && <i className="fa-solid fa-eye-slash" />}
         </div>
     )
-
 }
 
 export default ImageView
