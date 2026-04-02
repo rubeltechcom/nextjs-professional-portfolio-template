@@ -1,0 +1,229 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Awards",
+                "title_short_nav": "Achievements",
+                "title_long_prefix": "Here are my",
+                "title_long": "Career {{Achievements}}"
+            },
+            "es": {
+                "title_short": "Logros",
+                "title_short_nav": "Logros",
+                "title_long_prefix": "Aquí están mis",
+                "title_long": "{{Logros}} Profesionales"
+            },
+            "fr": {
+                "title_short": "Réalis",
+                "title_short_nav": "Réalisations",
+                "title_long_prefix": "Voici",
+                "title_long": "Mes {{Réalisations}}"
+            },
+            "ko": {
+                "title_short": "경력 성과",
+                "title_short_nav": "경력 성과",
+                "title_long_prefix": "다음은",
+                "title_long": "{{경력 성과}}입니다"
+            },
+            "bn": {
+                "title_short": "পুরস্কার",
+                "title_short_nav": "সাফল্য",
+                "title_long_prefix": "এখানে আমার",
+                "title_long": "ক্যারিয়ার {{সাফল্য}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleCards",
+            "locales": {
+                "en": { "title": "Certifications" },
+                "bn": { "title": "সার্টিফিকেশন" }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-brands fa-google",
+                    "faIconColors": {"bg": "#4285F4", "fill": "#FFF"},
+                    "date": {"year": 2021, "month": 3},
+                    "link": {"href": "https://skillshop.exceedlms.com/", "tooltipString": "see_certification"},
+                    "locales": {
+                        "en": {
+                            "title": "Google {{Analytics}}",
+                            "text": "Google Analytics Individual Qualification (GAIQ)"
+                        },
+                        "bn": {
+                            "title": "গুগল {{অ্যানালিটিক্স}}",
+                            "text": "গুগল অ্যানালিটিক্স ইন্ডিভিজুয়াল কোয়ালিফিকেশন (GAIQ)"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-brands fa-hubspot",
+                    "faIconColors": {"bg": "#FF7A59", "fill": "#FFF"},
+                    "date": {"year": 2022, "month": 6},
+                    "link": {"href": "https://academy.hubspot.com/", "tooltipString": "see_certification"},
+                    "locales": {
+                        "en": {
+                            "title": "{{HubSpot}} Academy",
+                            "text": "SEO Certification - Advanced Search Engine Optimization"
+                        },
+                        "bn": {
+                            "title": "{{হাবস্পট}} একাডেমি",
+                            "text": "এসইও সার্টিফিকেশন - অ্যাডভান্সড সার্চ ইঞ্জিন অপ্টিমাইজেশন"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-chart-pie",
+                    "faIconColors": {"bg": "#FF6200", "fill": "#FFF"},
+                    "date": {"year": 2023, "month": 1},
+                    "link": {"href": "https://www.semrush.com/academy/", "tooltipString": "see_certification"},
+                    "locales": {
+                        "en": {
+                            "title": "{{Semrush}} Academy",
+                            "text": "SEO Toolkit Exam - Technical & On-Page SEO"
+                        },
+                        "bn": {
+                            "title": "{{সেমরাশ}} একাডেমি",
+                            "text": "এসইও টুলকিট এক্সাম - টেকনিক্যাল এবং অন-পেজ এসইও"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-brands fa-google",
+                    "faIconColors": {"bg": "#34A853", "fill": "#FFF"},
+                    "date": {"year": 2023, "month": 8},
+                    "link": {"href": "https://skillshop.exceedlms.com/", "tooltipString": "see_certification"},
+                    "locales": {
+                        "en": {
+                            "title": "Google {{Ads}}",
+                            "text": "Google Ads Search Certification"
+                        },
+                        "bn": {
+                            "title": "গুগল {{অ্যাডস}}",
+                            "text": "গুগল অ্যাডস সার্চ সার্টিফিকেশন"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": { "title": "Awards & Recognition" },
+                "bn": { "title": "পুরস্কার এবং স্বীকৃতি" }
+            },
+            "settings": {
+                "max_rows_collapse_threshold": 4,
+                "order_items_by": "date",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "date": {"year": 2023, "month": 11},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Best SEO Campaign}} – Digital Marketing Awards",
+                            "province": "Dhaka",
+                            "country": "Bangladesh",
+                            "institution": "Digital Marketing Forum",
+                            "text": "Recognized for leading the most successful SEO campaign of the year for a multi-national e-commerce brand, resulting in a [[500% increase in organic revenue]]."
+                        },
+                        "bn": {
+                            "title": "{{সেরা এসইও ক্যাম্পেইন}} – ডিজিটাল মার্কেটিং অ্যাওয়ার্ডস",
+                            "province": "ঢাকা",
+                            "country": "বাংলাদেশ",
+                            "institution": "ডিজিটাল মার্কেটিং ফোরাম",
+                            "text": "একটি বহুজাতিক ই-কমার্স ব্র্যান্ডের জন্য বছরের সবচেয়ে সফল এসইও ক্যাম্পেইন পরিচালনার জন্য স্বীকৃত, যার ফলে [[অর্গানিক রেভিনিউ ৫০০% বৃদ্ধি]] পেয়েছে।"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "date": {"year": 2022, "month": 5},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Top Rated Plus}} SEO Expert",
+                            "province": "Remote",
+                            "country": "Global",
+                            "institution": "Upwork",
+                            "text": "Achieved the [[Top Rated Plus]] status on Upwork, representing the top 1% of SEO professionals on the platform with a 100% Job Success Score.",
+                            "list": [
+                                "Maintained 100% Job Success Score for 2+ years",
+                                "Completed 100+ SEO projects with 5-star ratings",
+                                "Generated over $100k in client revenue through SEO"
+                            ]
+                        },
+                        "bn": {
+                            "title": "{{টপ রেটেড প্লাস}} এসইও এক্সপার্ট",
+                            "province": "রিমোট",
+                            "country": "গ্লোবাল",
+                            "institution": "আপওয়ার্ক",
+                            "text": "আপওয়ার্কে [[টপ রেটেড প্লাস]] স্ট্যাটাস অর্জন করেছি, যা ১০০% জব সাকসেস স্কোরসহ প্ল্যাটফর্মের শীর্ষ ১% এসইও পেশাদারদের প্রতিনিধিত্ব করে।",
+                            "list": [
+                                "২+ বছর ধরে ১০০% জব সাকসেস স্কোর বজায় রেখেছি",
+                                "৫-স্টার রেটিং সহ ১০০+ এসইও প্রজেক্ট সম্পন্ন করেছি",
+                                "এসইও-এর মাধ্যমে ক্লায়েন্টের জন্য $১০০k-এর বেশি রেভিনিউ জেনারেট করেছি"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "date": {"year": 2021, "month": 9},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{SEO Innovation}} Award",
+                            "province": "London",
+                            "country": "UK",
+                            "institution": "Search Engine Land",
+                            "text": "Awarded for developing a unique [[automated SEO auditing tool]] that reduced manual audit time by 70% while increasing accuracy in identifying technical bottlenecks."
+                        },
+                        "bn": {
+                            "title": "{{এসইও ইনোভেশন}} অ্যাওয়ার্ড",
+                            "province": "লন্ডন",
+                            "country": "ইউকে",
+                            "institution": "সার্চ ইঞ্জিন ল্যান্ড",
+                            "text": "একটি অনন্য [[স্বয়ংক্রিয় এসইও অডিটিং টুল]] তৈরির জন্য পুরস্কৃত হয়েছি যা টেকনিক্যাল সমস্যা শনাক্ত করার নির্ভুলতা বৃদ্ধির পাশাপাশি ম্যানুয়াল অডিট সময় ৭০% কমিয়ে দিয়েছে।"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,194 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Experience",
+                "title_short_nav": "Experience",
+                "title_long_prefix": "Summary of my",
+                "title_long": "{{Work}} Experience"
+            },
+            "es": {
+                "title_short": "Experiencia",
+                "title_short_nav": "Experiencia",
+                "title_long_prefix": "Resumen de mi",
+                "title_long": "Experiencia {{Laboral}}"
+            },
+            "fr": {
+                "title_short": "Expérience",
+                "title_short_nav": "Expérience",
+                "title_long_prefix": "Résumé de mon",
+                "title_long": "Parcours {{Professionel}}"
+            },
+            "ko": {
+                "title_short": "경험",
+                "title_short_nav": "경험",
+                "title_long_prefix": "이것은 내",
+                "title_long": "{{직업적}} 경험"
+            },
+            "bn": {
+                "title_short": "অভিজ্ঞতা",
+                "title_short_nav": "অভিজ্ঞতা",
+                "title_long_prefix": "আমার কাজের",
+                "title_long": "{{পেশাদার}} অভিজ্ঞতা"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "dateStart"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-seedling",
+                    "faIconColors": {"bg": "", "fill": "#4CAF50"},
+                    "dateStart": {"year": 2015, "month": 1},
+                    "dateEnd": {"year": 2017, "month": 5},
+                    "locales": {
+                        "en": {
+                            "title": "{{Junior SEO}} Executive",
+                            "province": "Dhaka",
+                            "country": "Bangladesh",
+                            "institution": "Digital Marketing Agency",
+                            "text": "Started my journey in SEO by mastering the fundamentals of [[search engine optimization]]. Focused on keyword research, on-page optimization, and basic link building strategies.",
+                            "list": [
+                                "Performed keyword research for 20+ clients",
+                                "Optimized meta tags and content structure",
+                                "Assisted in building high-quality backlinks"
+                            ],
+                            "tags": ["Keyword Research", "On-Page SEO", "Link Building"]
+                        },
+                        "bn": {
+                            "title": "{{জুনিয়র এসইও}} এক্সিকিউটিভ",
+                            "province": "ঢাকা",
+                            "country": "বাংলাদেশ",
+                            "institution": "ডিজিটাল মার্কেটিং এজেন্সি",
+                            "text": "[[সার্চ ইঞ্জিন অপ্টিমাইজেশন]]-এর মৌলিক বিষয়গুলো আয়ত্ত করার মাধ্যমে আমার এসইও যাত্রা শুরু করি। কীওয়ার্ড রিসার্চ, অন-পেজ অপ্টিমাইজেশন এবং মৌলিক লিঙ্ক বিল্ডিং কৌশলের ওপর গুরুত্ব দিয়েছি।",
+                            "list": [
+                                "২০+ ক্লায়েন্টের জন্য কীওয়ার্ড রিসার্চ সম্পন্ন করেছি",
+                                "মেটা ট্যাগ এবং কন্টেন্ট স্ট্রাকচার অপ্টিমাইজ করেছি",
+                                "উচ্চ-মানের ব্যাকলিঙ্ক তৈরিতে সহায়তা করেছি"
+                            ],
+                            "tags": ["কীওয়ার্ড রিসার্চ", "অন-পেজ এসইও", "লিঙ্ক বিল্ডিং"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-magnifying-glass-chart",
+                    "faIconColors": {"bg": "", "fill": "#2196F3"},
+                    "dateStart": {"year": 2017, "month": 6},
+                    "dateEnd": {"year": 2020, "month": 12},
+                    "locales": {
+                        "en": {
+                            "title": "{{SEO}} Specialist",
+                            "province": "Remote",
+                            "country": "USA",
+                            "institution": "E-commerce Solutions",
+                            "text": "Managed SEO strategies for large e-commerce platforms, achieving a [[300% increase in organic traffic]] within the first year. Specialized in technical SEO and content marketing.",
+                            "list": [
+                                "Conducted comprehensive technical SEO audits",
+                                "Implemented schema markup and site architecture improvements",
+                                "Developed content strategies that doubled organic leads"
+                            ],
+                            "tags": ["Technical SEO", "E-commerce SEO", "Content Strategy"]
+                        },
+                        "bn": {
+                            "title": "{{এসইও}} স্পেশালিস্ট",
+                            "province": "রিমোট",
+                            "country": "ইউএসএ",
+                            "institution": "ই-কমার্স সলিউশনস",
+                            "text": "বড় ই-কমার্স প্ল্যাটফর্মের জন্য এসইও কৌশল পরিচালনা করেছি, প্রথম বছরেই [[অর্গানিক ট্রাফিক ৩০০% বৃদ্ধি]] করেছি। টেকনিক্যাল এসইও এবং কন্টেন্ট মার্কেটিংয়ে বিশেষ দক্ষতা অর্জন করেছি।",
+                            "list": [
+                                "ব্যাপক টেকনিক্যাল এসইও অডিট পরিচালনা করেছি",
+                                "স্কিমা মার্কআপ এবং সাইট আর্কিটেকচার উন্নত করেছি",
+                                "কন্টেন্ট কৌশল তৈরি করেছি যা অর্গানিক লিড দ্বিগুণ করেছে"
+                            ],
+                            "tags": ["টেকনিক্যাল এসইও", "ই-কমার্স এসইও", "কন্টেন্ট কৌশল"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-chart-line",
+                    "faIconColors": {"bg": "", "fill": "#9C27B0"},
+                    "dateStart": {"year": 2021, "month": 1},
+                    "dateEnd": {"year": 2023, "month": 5},
+                    "locales": {
+                        "en": {
+                            "title": "{{Senior SEO}} Strategist",
+                            "province": "London",
+                            "country": "UK",
+                            "institution": "Global Tech Firm",
+                            "text": "Led international SEO campaigns for a global tech company, focusing on [[multi-lingual SEO]] and data-driven growth strategies. Managed a team of SEO analysts and content creators.",
+                            "list": [
+                                "Ranked 500+ high-competition keywords on the first page",
+                                "Managed SEO budgets and ROI tracking",
+                                "Integrated SEO with PPC and social media campaigns"
+                            ],
+                            "tags": ["International SEO", "Data Analysis", "Team Leadership"]
+                        },
+                        "bn": {
+                            "title": "{{সিনিয়র এসইও}} স্ট্র্যাটেজিস্ট",
+                            "province": "লন্ডন",
+                            "country": "ইউকে",
+                            "institution": "গ্লোবাল টেক ফার্ম",
+                            "text": "একটি গ্লোবাল টেক কোম্পানির জন্য আন্তর্জাতিক এসইও ক্যাম্পেইন পরিচালনা করেছি, যেখানে [[মাল্টি-লিঙ্গুয়াল এসইও]] এবং ডেটা-চালিত বৃদ্ধির কৌশলের ওপর গুরুত্ব দেওয়া হয়েছে। এসইও অ্যানালিস্ট এবং কন্টেন্ট ক্রিয়েটরদের একটি দল পরিচালনা করেছি।",
+                            "list": [
+                                "৫০০+ উচ্চ-প্রতিযোগিতামূলক কীওয়ার্ড প্রথম পাতায় র‍্যাঙ্ক করেছি",
+                                "এসইও বাজেট এবং আরওআই (ROI) ট্র্যাকিং পরিচালনা করেছি",
+                                "পিপিসি (PPC) এবং সোশ্যাল মিডিয়া ক্যাম্পেইনের সাথে এসইও সমন্বয় করেছি"
+                            ],
+                            "tags": ["ইন্টারন্যাশনাল এসইও", "ডেটা অ্যানালাইসিস", "টিম লিডারশিপ"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-crown",
+                    "faIconColors": {"bg": "#FFD700", "fill": "#000"},
+                    "dateStart": {"year": 2023, "month": 6},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "{{Head of SEO}} / Lead Consultant",
+                            "province": "Dhaka",
+                            "country": "Bangladesh",
+                            "institution": "RubelTech SEO Services",
+                            "text": "Currently leading my own SEO consultancy, providing [[premium SEO solutions]] to clients worldwide. Focus on long-term growth and sustainable search engine visibility.",
+                            "list": [
+                                "Providing strategic SEO consulting for Fortune 500 companies",
+                                "Developing proprietary SEO auditing frameworks",
+                                "Achieving consistent top rankings for competitive niches"
+                            ],
+                            "tags": ["SEO Consulting", "Strategic Planning", "Business Growth"]
+                        },
+                        "bn": {
+                            "title": "{{হেড অফ এসইও}} / লিড কনসালট্যান্ট",
+                            "province": "ঢাকা",
+                            "country": "বাংলাদেশ",
+                            "institution": "RubelTech SEO Services",
+                            "text": "বর্তমানে আমার নিজস্ব এসইও কনসালটেন্সি পরিচালনা করছি, বিশ্বজুড়ে ক্লায়েন্টদের [[প্রিমিয়াম এসইও সলিউশন]] প্রদান করছি। দীর্ঘমেয়াদী বৃদ্ধি এবং টেকসই সার্চ ইঞ্জিন ভিজিবিলিটির ওপর গুরুত্ব দিচ্ছি।",
+                            "list": [
+                                "ফরচুন ৫০০ কোম্পানির জন্য কৌশলগত এসইও পরামর্শ প্রদান করছি",
+                                "নিজস্ব এসইও অডিটিং ফ্রেমওয়ার্ক তৈরি করছি",
+                                "প্রতিযোগিতামূলক নিশে ধারাবাহিকভাবে শীর্ষ র‍্যাঙ্কিং অর্জন করছি"
+                            ],
+                            "tags": ["এসইও কনসাল্টিং", "কৌশলগত পরিকল্পনা", "বিজনেস গ্রোথ"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

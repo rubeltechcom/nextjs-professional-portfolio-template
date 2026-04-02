@@ -1,0 +1,519 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Welcome!",
+                "title_short_nav": "About me",
+                "title_long_prefix": "Hello...",
+                "title_long": "I'm {{Rubel Mondol!}}"
+            },
+            "es": {
+                "title_short": "¡Saludos!",
+                "title_short_nav": "Sobre mí",
+                "title_long_prefix": "Hola...",
+                "title_long": "Soy {{Rubel Mondol!}}"
+            },
+            "fr": {
+                "title_short": "Salut !",
+                "title_short_nav": "À propos",
+                "title_long_prefix": "Salut...",
+                "title_long": "Je suis {{Rubel Mondol!}}"
+            },
+            "ko": {
+                "title_short": "환영합니다!",
+                "title_short_nav": "소개",
+                "title_long_prefix": "안녕하세요...",
+                "title_long": "저는 {{Rubel Mondol}}입니다!"
+            },
+            "bn": {
+                "title_short": "স্বাগতম!",
+                "title_short_nav": "আমার সম্পর্কে",
+                "title_long_prefix": "হ্যালো...",
+                "title_long": "আমি {{রুবেল মন্ডল !}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleInlineList",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "display_as_list_if_width_is_lower_than": 380
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "label": "Dhaka – Bangladesh",
+                    "link": {"href": "", "tooltipString": ""},
+                    "faIcon": "pi pi-map-marker"
+                },
+                {
+                    "id": 2,
+                    "label": "contact@rubeltech.com",
+                    "link": {"href": "mailto:contact@rubeltech.com", "tooltipString": "email_me"},
+                    "faIcon": "fa-regular fa-envelope"
+                },
+                {
+                    "id": 3,
+                    "label": "@rubeltechcom",
+                    "link": {"href": "https://github.com/rubeltechcom", "tooltipString": "see_on_github"},
+                    "faIcon": "fa-brands fa-github"
+                },
+                {
+                    "id": 4,
+                    "label": "LinkedIn",
+                    "link": {"href": "https://www.linkedin.com/in/rubeltechcom", "tooltipString": "see_on_linkedin"},
+                    "faIcon": "fa-brands fa-linkedin"
+                },
+                {
+                    "id": 5,
+                    "label": "Facebook",
+                    "link": {"href": "https://www.facebook.com/rubeltechcom", "tooltipString": "see_on_facebook"},
+                    "faIcon": "fa-brands fa-facebook"
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleText",
+            "locales": {
+                "en": {"title": "{{A little bit}} about me..."},
+                "es": {"title": "{{Un poco}} sobre mí..."},
+                "fr": {"title": "{{Un peu}} à propos de moi..."},
+                "ko": {"title": "저에 {{대해 조금}}..."},
+                "bn": {"title": "{{আমার সম্পর্কে}} সামান্য তথ্য..."}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "images/pictures/seo-avatar.svg",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "text": "<p>I’m a {{SEO Specialist & Full-stack Developer}} with [[10+ years]] of experience. I specialize in backend development, web optimization, and technical SEO for international clients.</p><p>I have hands-on experience with PHP, JavaScript, Python, and DevOps tools in production environments. My goal is to help businesses [[increase traffic, improve UX, and optimize performance]] globally.</p><p>Looking forward to collaborating [[with you!]]</p>"
+                        },
+                        "es": {
+                            "text": "<p>Soy {{Especialista en SEO y Desarrollador Full-stack}} con [[más de 10 años]] de experiencia. Me especializo en desarrollo backend, optimización web y SEO técnico para clientes internacionales.</p><p>Tengo experiencia práctica en PHP, JavaScript, Python y herramientas de DevOps en entornos de producción. Mi objetivo es ayudar a las empresas a [[aumentar tráfico, mejorar UX y optimizar rendimiento]] globalmente.</p><p>¡Espero colaborar [[contigo!]]</p>"
+                        },
+                        "fr": {
+                            "text": "<p>Je suis {{Spécialiste SEO et Développeur Full-stack}} avec [[plus de 10 ans]] d'expérience. Je me spécialise dans le développement backend, l'optimisation web et le SEO technique pour des clients internationaux.</p><p>J'ai une expérience pratique avec PHP, JavaScript, Python et des outils DevOps en production. Mon objectif est d'aider les entreprises à [[augmenter le trafic, améliorer l'UX et optimiser la performance]] à l'échelle mondiale.</p><p>Hâte de collaborer [[avec vous !]]</p>"
+                        },
+                        "ko": {
+                            "text": "<p>저는 {{SEO 전문가 및 풀스택 개발자}}로 [[10년 이상]] 경력을 가지고 있습니다. 백엔드 개발, 웹 최적화 및 국제 클라이언트를 위한 기술 SEO를 전문으로 합니다.</p><p>PHP, JavaScript, Python 및 DevOps 도구를 사용한 실무 경험이 있으며, 목표는 기업이 [[트래픽 증가, UX 개선, 성능 최적화]]를 글로벌 수준으로 달성하도록 돕는 것입니다.</p><p>[[당신과 협업]]하기를 기대합니다!</p>"
+                        },
+                        "bn": {
+                            "text": "<p>আমি একজন {{SEO বিশেষজ্ঞ ও ফুল-স্ট্যাক ডেভেলপার}} যার [[১০+ বছর]] অভিজ্ঞতা রয়েছে। আমি ব্যাকএন্ড ডেভেলপমেন্ট, ওয়েব অপ্টিমাইজেশন এবং আন্তর্জাতিক ক্লায়েন্টদের জন্য টেকনিক্যাল SEO-তে দক্ষ।</p><p>আমার PHP, JavaScript, Python এবং DevOps টুল নিয়ে প্রোডাকশন এনভায়রনমেন্টে হাতে-কলমে অভিজ্ঞতা রয়েছে। আমার লক্ষ্য হলো ব্যবসায়িক প্রতিষ্ঠানগুলোকে [[ট্রাফিক বৃদ্ধি, UX উন্নত করা, এবং পারফরম্যান্স অপ্টিমাইজ]] করতে সাহায্য করা।</p><p>[[আপনার সাথে]] সহযোগিতার জন্য অপেক্ষায় আছি!</p>"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 3,
+            "component": "ArticleTestimonials",
+            "locales": {
+                "en": {"title": "Client {{testimonials}}"},
+                "es": {"title": "Testimonios de {{clientes}}"},
+                "fr": {"title": "Témoignages de {{clients}}"},
+                "ko": {"title": "{{고객}} 추천사"},
+                "bn": {"title": "{{ক্লায়েন্ট}} প্রশংসাপত্র"}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "label": "Sarah Jenkins",
+                    "link": {"href": "https://linkedin.com", "tooltipString": "open_website"},
+                    "img": "images/pictures/testimonial-person-female-1.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "E-commerce Director at [[Luxe Gear]]",
+                            "text": "Rubel's SEO strategy was a [[game-changer]] for our online store. Our organic traffic increased by [[150%]] in just six months, leading to a significant boost in sales. His expertise is unmatched!"
+                        },
+                        "es": {
+                            "title": "Directora de E-commerce en [[Luxe Gear]]",
+                            "text": "La estrategia SEO de Rubel fue un [[cambio radical]] para nuestra tienda. El tráfico orgánico aumentó un [[150%]] en seis meses, impulsando las ventas. ¡Su experiencia es inigualable!"
+                        },
+                        "fr": {
+                            "title": "Directrice E-commerce chez [[Luxe Gear]]",
+                            "text": "La stratégie SEO de Rubel a [[tout changé]] pour notre boutique. Notre trafic organique a augmenté de [[150%]] en six mois, boostant nos ventes. Son expertise est inégalée !"
+                        },
+                        "ko": {
+                            "title": "[[Luxe Gear]] 이커머스 디렉터",
+                            "text": "루벨의 SEO 전략은 우리 쇼핑몰에 [[혁신적인 변화]]를 가져왔습니다. 6개월 만에 유기적 트래픽이 [[150%]] 증가하여 매출이 크게 늘었습니다. 그의 전문성은 타의 추종을 불허합니다!"
+                        },
+                        "bn": {
+                            "title": "ই-কমার্স ডিরেক্টর, [[Luxe Gear]]-এ",
+                            "text": "রুবেলের SEO কৌশল আমাদের অনলাইন স্টোরের জন্য একটি [[গেম-চেঞ্জার]] ছিল। মাত্র ছয় মাসে আমাদের অর্গানিক ট্রাফিক [[১৫০%]] বৃদ্ধি পেয়েছে, যা বিক্রয়ে উল্লেখযোগ্য উন্নতি এনেছে। তার দক্ষতা অতুলনীয়!"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "label": "David Chen",
+                    "link": {"href": "https://github.com", "tooltipString": "open_website"},
+                    "img": "images/pictures/testimonial-person-male-1.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Founder of [[TechFlow Startup]]",
+                            "text": "The technical SEO audit Rubel performed was incredibly thorough. He fixed issues we didn't even know existed, and our site speed has never been better. Highly recommend his [[full-stack skills]] for any complex project."
+                        },
+                        "es": {
+                            "title": "Fundador de [[TechFlow Startup]]",
+                            "text": "La auditoría SEO técnica de Rubel fue increíblemente detallada. Solucionó problemas que ni sabíamos que existían. Recomiendo mucho sus [[habilidades full-stack]] para proyectos complejos."
+                        },
+                        "fr": {
+                            "title": "Fondateur de [[TechFlow Startup]]",
+                            "text": "L'audit SEO technique de Rubel était incroyablement approfondi. Il a corrigé des problèmes dont nous ignorions l'existence. Je recommande vivement ses [[compétences full-stack]] pour tout projet complexe."
+                        },
+                        "ko": {
+                            "title": "[[TechFlow Startup]] 설립자",
+                            "text": "루벨이 수행한 기술적 SEO 감사는 매우 철저했습니다. 우리가 알지도 못했던 문제들을 해결해 주었고, 사이트 속도가 그 어느 때보다 빨라졌습니다. 복잡한 프로젝트에 그의 [[풀스택 기술]]을 강력히 추천합니다."
+                        },
+                        "bn": {
+                            "title": "প্রতিষ্ঠাতা, [[TechFlow Startup]]-এ",
+                            "text": "রুবেল যে টেকনিক্যাল SEO অডিট করেছেন তা অত্যন্ত পুঙ্খানুপুঙ্খ ছিল। তিনি এমন সব সমস্যা সমাধান করেছেন যা আমরা জানতামই না, এবং আমাদের সাইটের গতি এখন আগের চেয়ে অনেক ভালো। যেকোনো জটিল প্রজেক্টের জন্য তার [[ফুল-স্ট্যাক দক্ষতা]] অত্যন্ত প্রশংসনীয়।"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "label": "Michael Rodriguez",
+                    "link": {"href": "https://linkedin.com", "tooltipString": "open_website"},
+                    "img": "images/pictures/testimonial-person-male-2.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Marketing Manager at [[Global Solutions]]",
+                            "text": "We struggled with international rankings until we hired Rubel. His [[keyword research and optimization]] helped us dominate search results in multiple regions. A true professional who delivers results."
+                        },
+                        "es": {
+                            "title": "Gerente de Marketing en [[Global Solutions]]",
+                            "text": "Teníamos problemas con el ranking internacional hasta que contratamos a Rubel. Su [[investigación de palabras clave]] nos ayudó a dominar los resultados de búsqueda. Un profesional de resultados."
+                        },
+                        "fr": {
+                            "title": "Responsable Marketing chez [[Global Solutions]]",
+                            "text": "Nous avions du mal avec le classement international avant d'engager Rubel. Sa [[recherche de mots-clés]] nous a permis de dominer les résultats de recherche. Un vrai professionnel."
+                        },
+                        "ko": {
+                            "title": "[[Global Solutions]] 마케팅 매니저",
+                            "text": "루벨을 고용하기 전까지 국제 랭킹 문제로 고생했습니다. 그의 [[키워드 조사 및 최적화]] 덕분에 여러 지역의 검색 결과에서 우위를 점할 수 있었습니다. 결과를 만들어내는 진정한 전문가입니다."
+                        },
+                        "bn": {
+                            "title": "মার্কেটিং ম্যানেজার, [[Global Solutions]]-এ",
+                            "text": "রুবেলকে নিয়োগ দেওয়ার আগে আমরা আন্তর্জাতিক র‍্যাঙ্কিং নিয়ে অনেক ভুগেছি। তার [[কিওয়ার্ড রিসার্চ এবং অপ্টিমাইজেশন]] আমাদের একাধিক অঞ্চলে সার্চ রেজাল্টে আধিপত্য বিস্তার করতে সাহায্য করেছে। তিনি একজন সত্যিকারের পেশাদার।"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "Emily Watson",
+                    "link": {"href": "https://dribbble.com", "tooltipString": "open_website"},
+                    "img": "images/pictures/testimonial-person-female-2.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Content Strategist at [[Creative Pulse]]",
+                            "text": "Rubel doesn't just do SEO; he understands the [[user journey]]. His content optimization tips helped our blog posts reach the right audience and stay on the first page of Google consistently."
+                        },
+                        "es": {
+                            "title": "Estratega de Contenido en [[Creative Pulse]]",
+                            "text": "Rubel no solo hace SEO; entiende el [[viaje del usuario]]. Sus consejos de optimización ayudaron a que nuestros posts llegaran a la audiencia correcta y se mantuvieran en la primera página."
+                        },
+                        "fr": {
+                            "title": "Stratège de Contenu chez [[Creative Pulse]]",
+                            "text": "Rubel ne se contente pas de faire du SEO ; il comprend le [[parcours utilisateur]]. Ses conseils d'optimisation ont aidé nos articles à atteindre la bonne audience et à rester en première page."
+                        },
+                        "ko": {
+                            "title": "[[Creative Pulse]] 콘텐츠 전략가",
+                            "text": "루벨은 단순한 SEO를 넘어 [[사용자 여정]]을 이해합니다. 그의 콘텐츠 최적화 팁 덕분에 블로그 포스트가 적절한 타겟에게 도달하고 구글 첫 페이지를 유지할 수 있었습니다."
+                        },
+                        "bn": {
+                            "title": "কন্টেন্ট স্ট্র্যাটেজিস্ট, [[Creative Pulse]]-এ",
+                            "text": "রুবেল শুধু SEO করেন না; তিনি [[ইউজার জার্নি]] বোঝেন। তার কন্টেন্ট অপ্টিমাইজেশন টিপস আমাদের ব্লগ পোস্টগুলোকে সঠিক দর্শকদের কাছে পৌঁছাতে এবং গুগলের প্রথম পাতায় থাকতে সাহায্য করেছে।"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "label": "James Miller",
+                    "link": {"href": "https://github.com", "tooltipString": "open_website"},
+                    "img": "images/pictures/testimonial-person-male-3.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "CTO at [[FinTech Innovations]]",
+                            "text": "Rubel's [[full-stack expertise]] was instrumental in building our customer portal. He delivered a seamless integration between our React frontend and Node.js backend, ensuring top-tier performance."
+                        },
+                        "es": {
+                            "title": "CTO en [[FinTech Innovations]]",
+                            "text": "La [[experiencia full-stack]] de Rubel fue fundamental para construir nuestro portal. Logró una integración perfecta entre React y Node.js, asegurando un rendimiento de primer nivel."
+                        },
+                        "fr": {
+                            "title": "CTO chez [[FinTech Innovations]]",
+                            "text": "L'[[expertise full-stack]] de Rubel a été déterminante dans la création de notre portail client. Il a assuré une intégration fluide entre React et Node.js, garantissant des performances optimales."
+                        },
+                        "ko": {
+                            "title": "[[FinTech Innovations]] CTO",
+                            "text": "루벨의 [[풀스택 전문성]]은 우리 고객 포털을 구축하는 데 결정적인 역할을 했습니다. 그는 React 프론트엔드와 Node.js 백엔드 간의 원활한 통합을 구현하여 최고의 성능을 보장했습니다."
+                        },
+                        "bn": {
+                            "title": "CTO, [[FinTech Innovations]]-এ",
+                            "text": "আমাদের কাস্টমার পোর্টাল তৈরিতে রুবেলের [[ফুল-স্ট্যাক দক্ষতা]] অত্যন্ত গুরুত্বপূর্ণ ছিল। তিনি আমাদের React ফ্রন্টএন্ড এবং Node.js ব্যাকএন্ডের মধ্যে একটি নিরবচ্ছিন্ন ইন্টিগ্রেশন সম্পন্ন করেছেন, যা সেরা পারফরম্যান্স নিশ্চিত করেছে।"
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "label": "Sophia Lee",
+                    "link": {"href": "https://google.com/maps", "tooltipString": "open_website"},
+                    "img": "images/pictures/testimonial-person-female-3.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Owner of [[Bloom & Grow Florist]]",
+                            "text": "Our local business was struggling to be seen online. Rubel's [[Local SEO]] strategy got us to the top of Google Maps. We've seen a [[300% increase]] in local calls and walk-in customers!"
+                        },
+                        "es": {
+                            "title": "Dueña de [[Bloom & Grow Florist]]",
+                            "text": "Nuestro negocio local no se veía online. La estrategia de [[SEO Local]] de Rubel nos llevó al top de Google Maps. ¡Vimos un [[aumento del 300%]] en llamadas locales!"
+                        },
+                        "fr": {
+                            "title": "Propriétaire de [[Bloom & Grow Florist]]",
+                            "text": "Notre entreprise locale avait du mal à être visible en ligne. La stratégie de [[SEO local]] de Rubel nous a propulsés en haut de Google Maps. Nous avons constaté une [[augmentation de 300 %]] des appels !"
+                        },
+                        "ko": {
+                            "title": "[[Bloom & Grow Florist]] 소유주",
+                            "text": "우리 지역 비즈니스는 온라인 노출에 어려움을 겪고 있었습니다. 루벨의 [[지역 SEO]] 전략 덕분에 구글 지도 상단에 오를 수 있었습니다. 지역 전화 문의와 방문 고객이 [[300% 증가]]했습니다!"
+                        },
+                        "bn": {
+                            "title": "মালিক, [[Bloom & Grow Florist]]",
+                            "text": "আমাদের লোকাল বিজনেস অনলাইনে খুঁজে পাওয়া যাচ্ছিল না। রুবেলের [[লোকাল SEO]] কৌশল আমাদের গুগল ম্যাপের শীর্ষে নিয়ে এসেছে। আমরা লোকাল কল এবং সরাসরি আসা কাস্টমারদের সংখ্যায় [[৩০০% বৃদ্ধি]] দেখেছি!"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 4,
+            "component": "ArticleInfoList",
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "locales": {
+                "en": {"title": "Personal {{interests}}"},
+                "es": {"title": "Intereses {{personales}}"},
+                "fr": {"title": "Intérêts {{personnels}} "},
+                "ko": {"title": "개인 {{관심사}}"},
+                "bn": {"title": "ব্যক্তিগত {{আগ্রহ}}"}
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-solid fa-search",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{AI}} video editing",
+                            "text": "Learning to use AI tools to enhance my videos."
+                        },
+                        "es": {
+                            "title": "Edición de video con {{AI}}",
+                            "text": "Aprendiendo a usar herramientas de IA para mejorar mis videos."
+                        },
+                        "fr": {
+                            "title": "Édition vidéo avec {{IA}}",
+                            "text": "Apprendre à utiliser des outils d'IA pour améliorer mes vidéos."
+                        },
+                        "ko": {
+                            "title": "{{AI}} 비디오 편집",
+                            "text": "AI 도구를 사용하여 내 영상을 향상시키는 방법 배우기."
+                        },
+                        "bn": {
+                            "title": "{{AI}} ভিডিও সম্পাদনা",
+                            "text": "আমার ভিডিওগুলিকে উন্নত করার জন্য AI টুল ব্যবহার করতে শেখা।"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-solid fa-palette",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{Arts}} & Illustration",
+                            "text": "Practicing digital art and exploring new styles."
+                        },
+                        "es": {
+                            "title": "{{Arte}} y Ilustración",
+                            "text": "Practicando arte digital y explorando nuevos estilos."
+                        },
+                        "fr": {
+                            "title": "{{Arts}} & Illustration",
+                            "text": "Pratiquer l'art numérique et explorer de nouveaux styles."
+                        },
+                        "ko": {
+                            "title": "{{예술}} 및 일러스트레이션",
+                            "text": "디지털 아트를 연습하고 새로운 스타일을 탐험하기."
+                        },
+                        "bn": {
+                            "title": "{{শিল্প}} ও চিত্রকর্ম",
+                            "text": "ডিজিটাল আর্ট চর্চা করা এবং নতুন স্টাইল অন্বেষণ করা।"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-solid fa-chart-line",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{Investing}} & Finance",
+                            "text": "Learning the basics of stocks and personal finance."
+                        },
+                        "es": {
+                            "title": "{{Inversión}} y Finanzas",
+                            "text": "Aprendiendo los conceptos básicos de acciones y finanzas personales."
+                        },
+                        "fr": {
+                            "title": "{{Investissement}} & Finance",
+                            "text": "Apprendre les bases des actions et des finances personnelles."
+                        },
+                        "ko": {
+                            "title": "{{투자}} 및 재정 관리",
+                            "text": "주식과 개인 재정의 기초 배우기."
+                        },
+                        "bn": {
+                            "title": "{{বিনিয়োগ}} ও ফাইনান্স",
+                            "text": "শেয়ার বাজার এবং ব্যক্তিগত অর্থনীতির মৌলিক বিষয়গুলো শেখা।"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-solid fa-window-restore",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{UX}} design",
+                            "text": "Studying user experience principles."
+                        },
+                        "es": {
+                            "title": "Diseño {{UX}}",
+                            "text": "Estudiando los principios de la experiencia del usuario."
+                        },
+                        "fr": {
+                            "title": "Conception {{UX}}",
+                            "text": "Étudier les principes de l'expérience utilisateur."
+                        },
+                        "ko": {
+                            "title": "{{UX}} 디자인",
+                            "text": "사용자 경험 원칙을 공부하기."
+                        },
+                        "bn": {
+                            "title": "{{UX}} ডিজাইন",
+                            "text": "ইউজার এক্সপেরিয়েন্সের নীতিমালা অধ্যয়ন করা।"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-solid fa-camera-retro",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{Photography}} & Photoshop",
+                            "text": "Enhancing photos through creative editing techniques."
+                        },
+                        "es": {
+                            "title": "{{Fotografía}} y Photoshop",
+                            "text": "Mejorando fotos a través de técnicas creativas de edición."
+                        },
+                        "fr": {
+                            "title": "{{Photographie}} & Photoshop",
+                            "text": "Améliorer des photos avec des techniques de montage créatives."
+                        },
+                        "ko": {
+                            "title": "{{사진}} 및 포토샵",
+                            "text": "창의적인 편집 기술을 통해 사진을 향상시키기."
+                        },
+                        "bn": {
+                            "title": "{{ফটোগ্রাফি}} ও ফটোশপ",
+                            "text": "সৃজনশীল এডিটিং কৌশলের মাধ্যমে ছবি উন্নত করা।"
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "faIcon": "fa-solid fa-drum-steelpan",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "Playing {{drums}}",
+                            "text": "Exploring different genres and improving my skills."
+                        },
+                        "es": {
+                            "title": "Tocar {{batería}}",
+                            "text": "Explorando diferentes géneros y mejorando mis habilidades."
+                        },
+                        "fr": {
+                            "title": "Jouer de la {{batterie}}",
+                            "text": "Explorer différents genres et améliorer mes compétences."
+                        },
+                        "ko": {
+                            "title": "{{드럼}} 연주",
+                            "text": "다양한 장르를 탐험하고 기술을 향상시키기."
+                        },
+                        "bn": {
+                            "title": "{{ড্রামস}} বাজানো",
+                            "text": "বিভিন্ন সঙ্গীত ধারা অন্বেষণ করা এবং আমার দক্ষতা উন্নত করা।"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

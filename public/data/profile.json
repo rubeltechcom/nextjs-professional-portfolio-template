@@ -1,0 +1,75 @@
+{
+    "name": "Rubel Mondol",
+
+    "profilePictureUrl": "images/pictures/profile-picture.jpg",
+    "resumePdfUrl": "",
+
+    "statusCircleVisible": true,
+    "statusCircleVariant": "available",
+    "statusCircleHoverMessage": "status_message_available_for_freelance",
+
+    "locales": {
+        "en": {
+            "localized_name": "Rubel Mondol",
+            "localized_name_stylized": "[[Rubel {{Mondol}}]]",
+            "status_message_available_for_freelance": "Available for freelance!",
+            "roles": [
+              "SEO Specialist",
+              "Technical SEO Expert",
+              "On-Page SEO Consultant",
+              "SEO Strategist"
+            ],
+            "name_pronunciation_ipa": "/rubel mondol/",
+            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
+        },
+        "es": {
+            "status_message_available_for_freelance": "¡Disponible para freelance!",
+            "roles": [
+              "Especialista en SEO",
+              "Experto en SEO Técnico",
+              "Consultor de SEO On-Page",
+              "Estratega SEO"
+            ],
+            "name_pronunciation_ipa": "/Rubel Mandal/",
+            "name_pronunciation_audio_url": "audio/spanish-name-pronunciation.mp3"
+        },
+        "fr": {
+            "status_message_available_for_freelance": "Disponible pour freelance !",
+            "roles": [
+              "Spécialiste SEO",
+              "Expert SEO Technique",
+              "Consultant SEO On-Page",
+              "Stratège SEO"
+            ],
+            "name_pronunciation_ipa": "/Rubel Mandal/",
+            "name_pronunciation_audio_url": "audio/french-name-pronunciation.mp3"
+
+        },
+        "ko": {
+            "localized_name": "루벨 몬달",
+            "localized_name_stylized": "{{루벨}} {{몬달}}",
+            "status_message_available_for_freelance": "프리랜스 가능합니다!",
+            "roles": [
+              "SEO 전문가",
+              "기술 SEO 전문가",
+              "온페이지 SEO 컨설턴트",
+              "SEO 전략가"
+            ],
+            "name_pronunciation_ipa": "/lubel mandal/",
+            "name_pronunciation_audio_url": "audio/korean-name-pronunciation.mp3"
+        },
+        "bn": {
+            "localized_name": "রুবেল মন্ডল",
+            "localized_name_stylized": "{{রুবেল}} {{মন্ডল}}",
+            "status_message_available_for_freelance": "ফ্রিল্যান্সের জন্য উপলব্ধ!",
+            "roles": [
+              "SEO বিশেষজ্ঞ",
+              "প্রযুক্তিগত SEO বিশেষজ্ঞ",
+              "অন-পেজ SEO পরামর্শক",
+              "SEO কৌশল বিশেষজ্ঞ"
+            ],
+            "name_pronunciation_ipa": "/রুবেল মন্ডল/",
+            "name_pronunciation_audio_url": "audio/bengali-name-pronunciation.mp3"
+        }
+    }
+}

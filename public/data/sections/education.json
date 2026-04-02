@@ -1,0 +1,134 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Education",
+                "title_short_nav": "Education",
+                "title_long_prefix": "This is my",
+                "title_long": "{{Education}} Background"
+            },
+            "es": {
+                "title_short": "Educación",
+                "title_short_nav": "Educación",
+                "title_long_prefix": "Esta es mi",
+                "title_long": "{{Formación}} Educativa"
+            },
+            "fr": {
+                "title_short": "Éducation",
+                "title_short_nav": "Éducation",
+                "title_long_prefix": "C'est mon",
+                "title_long": "{{Contexte}} Éducatif"
+            },
+            "ko": {
+                "title_short": "교육",
+                "title_short_nav": "교육",
+                "title_long_prefix": "이것은 내",
+                "title_long": "{{교육적}} 배경"
+            },
+            "bn": {
+                "title_short": "শিক্ষা",
+                "title_short_nav": "শিক্ষা",
+                "title_long_prefix": "আমার কাজের",
+                "title_long": "{{শিক্ষাগত}} পটভূমি"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-graduation-cap",
+                    "faIconColors": {"bg": "", "fill": "#3F51B5"},
+                    "dateStart": {"year": 2011, "month": 1},
+                    "dateEnd": {"year": 2015, "month": 12},
+                    "locales": {
+                        "en": {
+                            "title": "{{Bachelor}} in Business Administration",
+                            "province": "Dhaka",
+                            "country": "Bangladesh",
+                            "institution": "University of Dhaka",
+                            "text": "Earned a [[Bachelor's degree in BBA]], focusing on marketing, consumer behavior, and digital business strategies. This foundation helped me understand the business side of SEO.",
+                            "list": [],
+                            "tags": ["Marketing", "Business", "BBA"]
+                        },
+                        "bn": {
+                            "title": "{{ব্যাচেলর}} অফ বিজনেস অ্যাডমিনিস্ট্রেশন",
+                            "province": "ঢাকা",
+                            "country": "বাংলাদেশ",
+                            "institution": "ঢাকা বিশ্ববিদ্যালয়",
+                            "text": "মার্কেটিং, ভোক্তা আচরণ এবং ডিজিটাল বিজনেস কৌশলের ওপর গুরুত্ব দিয়ে [[বিবিএ-তে ব্যাচেলর ডিগ্রি]] অর্জন করেছি। এই ভিত্তি আমাকে এসইও-এর ব্যবসায়িক দিকটি বুঝতে সাহায্য করেছে।",
+                            "list": [],
+                            "tags": ["মার্কেটিং", "বিজনেস", "বিবিএ"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-certificate",
+                    "faIconColors": {"bg": "", "fill": "#FF9800"},
+                    "dateStart": {"year": 2016, "month": 1},
+                    "dateEnd": {"year": 2016, "month": 6},
+                    "locales": {
+                        "en": {
+                            "title": "Advanced {{SEO}} Certification",
+                            "province": "Online",
+                            "country": "Global",
+                            "institution": "HubSpot Academy",
+                            "text": "Completed an intensive certification program on [[advanced SEO strategies]], including technical SEO, content marketing, and link building techniques.",
+                            "list": [],
+                            "tags": ["SEO", "Certification", "HubSpot"]
+                        },
+                        "bn": {
+                            "title": "অ্যাডভান্সড {{এসইও}} সার্টিফিকেশন",
+                            "province": "অনলাইন",
+                            "country": "গ্লোবাল",
+                            "institution": "হাবস্পট একাডেমি",
+                            "text": "টেকনিক্যাল এসইও, কন্টেন্ট মার্কেটিং এবং লিঙ্ক বিল্ডিং কৌশলসহ [[অ্যাডভান্সড এসইও কৌশল]]-এর ওপর একটি নিবিড় সার্টিফিকেশন প্রোগ্রাম সম্পন্ন করেছি।",
+                            "list": [],
+                            "tags": ["এসইও", "সার্টিফিকেশন", "হাবস্পট"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-chart-simple",
+                    "faIconColors": {"bg": "", "fill": "#4CAF50"},
+                    "dateStart": {"year": 2017, "month": 1},
+                    "dateEnd": {"year": 2017, "month": 3},
+                    "locales": {
+                        "en": {
+                            "title": "Google {{Analytics}} Individual Qualification",
+                            "province": "Online",
+                            "country": "Global",
+                            "institution": "Google Skillshop",
+                            "text": "Gained deep knowledge in [[data analysis and tracking]] using Google Analytics to measure website performance and user behavior.",
+                            "list": [],
+                            "tags": ["Google Analytics", "Data", "Tracking"]
+                        },
+                        "bn": {
+                            "title": "গুগল {{অ্যানালিটিক্স}} ইন্ডিভিজুয়াল কোয়ালিফিকেশন",
+                            "province": "অনলাইন",
+                            "country": "গ্লোবাল",
+                            "institution": "গুগল স্কিলশপ",
+                            "text": "ওয়েবসাইট পারফরম্যান্স এবং ব্যবহারকারীর আচরণ পরিমাপ করতে গুগল অ্যানালিটিক্স ব্যবহার করে [[ডেটা অ্যানালাইসিস এবং ট্র্যাকিং]]-এ গভীর জ্ঞান অর্জন করেছি।",
+                            "list": [],
+                            "tags": ["গুগল অ্যানালিটিক্স", "ডেটা", "ট্র্যাকিং"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

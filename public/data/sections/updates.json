@@ -1,0 +1,286 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Life recently",
+                "title_short_nav": "Updates",
+                "title_long_prefix": "Take a look at my",
+                "title_long": "Recent {{Updates}}"
+            },
+            "es": {
+                "title_short": "Vida Reciente",
+                "title_short_nav": "Actualizaciones",
+                "title_long_prefix": "Consulta mis",
+                "title_long": "Actualizaciones {{Recientes}}"
+            },
+            "fr": {
+                "title_short": "Vie Récente",
+                "title_short_nav": "Mises à Jour",
+                "title_long_prefix": "Découvrez mes",
+                "title_long": "Dernières {{Mises à Jour}}"
+            },
+            "ko": {
+                "title_short": "최근의 삶",
+                "title_short_nav": "업데이트",
+                "title_long_prefix": "내 최근",
+                "title_long": "{{업데이트}}를 확인해 보세요"
+            },
+            "bn": {
+                "title_short": "সাম্প্রতিক জীবন",
+                "title_short_nav": "আপডেট",
+                "title_long_prefix": "আমার সাম্প্রতিক",
+                "title_long": "{{আপডেট}} দেখুন"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleFacts",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": null,
+                    "faIcon": "fa-solid fa-globe",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "50+",
+                            "text": "Websites Optimized"
+                        },
+                        "bn": {
+                            "title": "৫০+",
+                            "text": "ওয়েবসাইট অপ্টিমাইজড"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": null,
+                    "faIcon": "fa-solid fa-chart-line",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "300%",
+                            "text": "Avg. Organic Growth"
+                        },
+                        "bn": {
+                            "title": "৩০০%",
+                            "text": "গড় অর্গানিক গ্রোথ"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": null,
+                    "faIcon": "fa-solid fa-key",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "1000+",
+                            "text": "Keywords on Page 1"
+                        },
+                        "bn": {
+                            "title": "১০০০+",
+                            "text": "কীওয়ার্ড ১ম পেজে"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": null,
+                    "faIcon": "fa-solid fa-magnifying-glass-chart",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "100+",
+                            "text": "SEO Audits Done"
+                        },
+                        "bn": {
+                            "title": "১০০+",
+                            "text": "এসইও অডিট সম্পন্ন"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": null,
+                    "faIcon": "fa-solid fa-link",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "5000+",
+                            "text": "Backlinks Built"
+                        },
+                        "bn": {
+                            "title": "৫০০০+",
+                            "text": "ব্যাকলিঙ্ক তৈরি"
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": null,
+                    "faIcon": "fa-solid fa-sack-dollar",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "$2M+",
+                            "text": "Client ROI Generated"
+                        },
+                        "bn": {
+                            "title": "$২M+",
+                            "text": "ক্লায়েন্ট ROI জেনারেট"
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "img": null,
+                    "faIcon": "fa-solid fa-calendar-check",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "5+",
+                            "text": "Years Experience"
+                        },
+                        "bn": {
+                            "title": "৫+",
+                            "text": "বছরের অভিজ্ঞতা"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": { "title": "Career {{Highlights}}" },
+                "bn": { "title": "ক্যারিয়ার {{হাইলাইটস}}" }
+            },
+            "settings": {
+                "max_rows_collapse_threshold": 3,
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "date": {"year": 2025, "month": 11},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Achieved {{500% Organic Growth}} for E-commerce Client",
+                            "province": "Remote",
+                            "country": "USA",
+                            "institution": "Global Retailers Inc.",
+                            "text": "Successfully led a comprehensive SEO strategy for a major e-commerce platform, resulting in a 500% increase in organic traffic and a significant boost in sales within 12 months. The strategy involved deep technical audits, content optimization, and a robust link-building campaign."
+                        },
+                        "bn": {
+                            "title": "ই-কমার্স ক্লায়েন্টের জন্য {{৫০০% অর্গানিক গ্রোথ}} অর্জন",
+                            "province": "রিমোট",
+                            "country": "ইউএসএ",
+                            "institution": "গ্লোবাল রিটেইলার্স ইনকর্পোরেটেড",
+                            "text": "একটি বড় ই-কমার্স প্ল্যাটফর্মের জন্য সফলভাবে একটি ব্যাপক এসইও কৌশল পরিচালনা করেছি, যার ফলে ১২ মাসের মধ্যে অর্গানিক ট্রাফিক ৫০০% বৃদ্ধি পেয়েছে এবং বিক্রিতে উল্লেখযোগ্য উন্নতি হয়েছে। এই কৌশলে গভীর টেকনিক্যাল অডিট, কন্টেন্ট অপ্টিমাইজেশন এবং একটি শক্তিশালী লিঙ্ক-বিল্ডিং ক্যাম্পেইন অন্তর্ভুক্ত ছিল।"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "date": {"year": 2025, "month": 8},
+                    "preview": {
+                        "links": [{
+                            "href": "https://medium.com",
+                            "tooltipString": "read_article",
+                            "faIcon": "fa-brands fa-medium"
+                        }],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Published Guide: {{Technical SEO for 2026}}",
+                            "province": "Dhaka",
+                            "country": "Bangladesh",
+                            "institution": "Medium",
+                            "text": "Authored a viral guide on Medium detailing the upcoming trends in technical SEO, focusing on AI-driven search, Core Web Vitals, and the impact of SGE (Search Generative Experience) on website rankings."
+                        },
+                        "bn": {
+                            "title": "গাইড প্রকাশিত: {{২০২৬ সালের জন্য টেকনিক্যাল এসইও}}",
+                            "province": "ঢাকা",
+                            "country": "বাংলাদেশ",
+                            "institution": "মিডিয়াম",
+                            "text": "মিডিয়ামে টেকনিক্যাল এসইও-এর আসন্ন ট্রেন্ডগুলি নিয়ে একটি ভাইরাল গাইড লিখেছি, যেখানে এআই-চালিত সার্চ, কোর ওয়েব ভাইটালস এবং ওয়েবসাইট র‍্যাঙ্কিংয়ে এসজিই (সার্চ জেনারেটিভ এক্সপেরিয়েন্স)-এর প্রভাবের ওপর গুরুত্ব দেওয়া হয়েছে।"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "date": {"year": 2025, "month": 3},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Speaker at {{Digital Marketing Summit 2025}}",
+                            "province": "London",
+                            "country": "UK",
+                            "institution": "DMS Global",
+                            "text": "Invited as a guest speaker to discuss the 'Future of Search in the Age of AI'. Shared insights on how SEO specialists can adapt to generative AI and maintain competitive advantage in search results."
+                        },
+                        "bn": {
+                            "title": "{{ডিজিটাল মার্কেটিং সামিট ২০২৫}}-এ বক্তা",
+                            "province": "লন্ডন",
+                            "country": "ইউকে",
+                            "institution": "ডিএমএস গ্লোবাল",
+                            "text": "'এআই যুগে সার্চের ভবিষ্যৎ' নিয়ে আলোচনার জন্য অতিথি বক্তা হিসেবে আমন্ত্রিত হয়েছিলাম। এসইও বিশেষজ্ঞরা কীভাবে জেনারেটিভ এআই-এর সাথে খাপ খাইয়ে নিতে পারেন এবং সার্চ রেজাল্টে প্রতিযোগিতামূলক সুবিধা বজায় রাখতে পারেন সে সম্পর্কে ইনসাইট শেয়ার করেছি।"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "date": {"year": 2024, "month": 10},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Completed Major {{Technical Audit}} for Fortune 500",
+                            "province": "Remote",
+                            "country": "Global",
+                            "institution": "Confidential Client",
+                            "text": "Conducted a massive technical SEO audit for a Fortune 500 company with over 1 million pages. Identified and resolved critical crawlability and indexing issues, leading to a 40% improvement in search visibility."
+                        },
+                        "bn": {
+                            "title": "ফরচুন ৫০০ কোম্পানির জন্য বড় {{টেকনিক্যাল অডিট}} সম্পন্ন",
+                            "province": "রিমোট",
+                            "country": "গ্লোবাল",
+                            "institution": "গোপনীয় ক্লায়েন্ট",
+                            "text": "১ মিলিয়নেরও বেশি পেজ থাকা একটি ফরচুন ৫০০ কোম্পানির জন্য একটি বিশাল টেকনিক্যাল এসইও অডিট পরিচালনা করেছি। ক্রলযোগ্যতা এবং ইনডেক্সিং সংক্রান্ত জটিল সমস্যাগুলি শনাক্ত ও সমাধান করেছি, যার ফলে সার্চ ভিজিবিলিটি ৪০% বৃদ্ধি পেয়েছে।"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

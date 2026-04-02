@@ -1,0 +1,8 @@
+@import "../../styles/extend";
+
+div.date-badge-wrapper-transparent {
+    .date-badge {
+        background-color: transparent;
+        color: var(--theme-texts-light);
+    }
+}

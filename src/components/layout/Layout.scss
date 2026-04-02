@@ -1,0 +1,10 @@
+@import "../../styles/extend";
+
+div.layout {
+    color: var(--theme-texts);
+}
+
+div.layout-content {
+    z-index: $z-index-content;
+    padding: var(--default-card-spacing);
+}

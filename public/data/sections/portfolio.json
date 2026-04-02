@@ -1,0 +1,172 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Take a look at",
+                "title_long": "My {{Portfolio}}"
+            },
+            "es": {
+                "title_short": "Portafolio",
+                "title_short_nav": "Portafolio",
+                "title_long_prefix": "Explora",
+                "title_long": "Mi {{Portafolio}}"
+            },
+            "fr": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Découvrez",
+                "title_long": "Mon {{Portfolio}}"
+            },
+            "ko": {
+                "title_short": "포트폴리오",
+                "title_short_nav": "포트폴리오",
+                "title_long_prefix": "이것은 내",
+                "title_long": "{{포트폴리오}}입니다"
+            },
+            "bn": {
+                "title_short": "পোর্টফোলিও",
+                "title_short_nav": "পোর্টফোলিও",
+                "title_long_prefix": "এক নজর দেখুন",
+                "title_long": "আমার {{পোর্টফোলিও}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "category_all": "All",
+                    "category_technical": "Technical SEO",
+                    "category_content": "Content Strategy",
+                    "category_growth": "Growth Cases"
+                },
+                "bn": {
+                    "category_all": "সব",
+                    "category_technical": "টেকনিক্যাল এসইও",
+                    "category_content": "কন্টেন্ট কৌশল",
+                    "category_growth": "গ্রোথ কেস"
+                }
+            },
+            "settings": {
+                "categorize_by": ["category_technical", "category_content", "category_growth"],
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "categoryId": "category_growth",
+                    "img": "",
+                    "faIcon": "fa-solid fa-chart-line",
+                    "faIconColors": {"bg": "#E3F2FD", "fill": "#1976D2"},
+                    "preview": {
+                        "links": [
+                            {"href": "https://example.com/case-study-1", "tooltipString": "View Case Study", "faIcon": "fa-solid fa-file-lines"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "16:9",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "E-commerce Organic Growth",
+                            "text": "Achieved a <b>300% increase in organic traffic</b> for a major fashion retailer by optimizing site architecture and implementing a data-driven content strategy.",
+                            "tags": ["E-commerce", "Growth", "ROI"]
+                        },
+                        "bn": {
+                            "title": "ই-কমার্স অর্গানিক গ্রোথ",
+                            "text": "সাইট আর্কিটেকচার অপ্টিমাইজ করে এবং ডেটা-চালিত কন্টেন্ট কৌশল প্রয়োগ করে একটি বড় ফ্যাশন রিটেইলারে <b>অর্গানিক ট্রাফিক ৩০০% বৃদ্ধি</b> করেছি।",
+                            "tags": ["ই-কমার্স", "গ্রোথ", "আরওআই"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "categoryId": "category_technical",
+                    "img": "",
+                    "faIcon": "fa-solid fa-gears",
+                    "faIconColors": {"bg": "#F3E5F5", "fill": "#7B1FA2"},
+                    "preview": {
+                        "links": [
+                            {"href": "https://example.com/technical-audit", "tooltipString": "View Audit Sample", "faIcon": "fa-solid fa-magnifying-glass"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "16:9",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Technical SEO Audit Framework",
+                            "text": "Developed a comprehensive <b>150-point technical SEO audit</b> framework that identifies crawlability issues, site speed bottlenecks, and indexation errors.",
+                            "tags": ["Technical", "Audit", "Site Speed"]
+                        },
+                        "bn": {
+                            "title": "টেকনিক্যাল এসইও অডিট ফ্রেমওয়ার্ক",
+                            "text": "একটি ব্যাপক <b>১৫০-পয়েন্ট টেকনিক্যাল এসইও অডিট</b> ফ্রেমওয়ার্ক তৈরি করেছি যা ক্রলযোগ্যতা সমস্যা, সাইটের গতি এবং ইনডেক্সেশন ত্রুটিগুলি শনাক্ত করে।",
+                            "tags": ["টেকনিক্যাল", "অডিট", "সাইট স্পিড"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "categoryId": "category_content",
+                    "img": "",
+                    "faIcon": "fa-solid fa-pen-nib",
+                    "faIconColors": {"bg": "#FFF3E0", "fill": "#E65100"},
+                    "preview": {
+                        "links": [
+                            {"href": "https://example.com/content-strategy", "tooltipString": "View Strategy", "faIcon": "fa-solid fa-lightbulb"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "16:9",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "SaaS Content Strategy",
+                            "text": "Ranked <b>500+ high-intent keywords</b> on the first page of Google for a B2B SaaS startup, leading to a 150% increase in monthly qualified leads.",
+                            "tags": ["SaaS", "Content", "Keywords"]
+                        },
+                        "bn": {
+                            "title": "SaaS কন্টেন্ট কৌশল",
+                            "text": "একটি B2B SaaS স্টার্টআপের জন্য গুগল-এর প্রথম পাতায় <b>৫০০+ হাই-ইনটেন্ট কীওয়ার্ড</b> র‍্যাঙ্ক করেছি, যা মাসিক কোয়ালিফাইড লিড ১৫০% বৃদ্ধি করেছে।",
+                            "tags": ["SaaS", "কন্টেন্ট", "কীওয়ার্ড"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "categoryId": "category_growth",
+                    "img": "",
+                    "faIcon": "fa-solid fa-map-location-dot",
+                    "faIconColors": {"bg": "#E8F5E9", "fill": "#2E7D32"},
+                    "preview": {
+                        "links": [
+                            {"href": "https://example.com/local-seo", "tooltipString": "View Local Case", "faIcon": "fa-solid fa-location-dot"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "16:9",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Multi-location Local SEO",
+                            "text": "Optimized Google Business Profiles for a <b>50+ branch dental clinic</b>, resulting in a 200% increase in local map pack visibility and phone calls.",
+                            "tags": ["Local SEO", "GMB", "Maps"]
+                        },
+                        "bn": {
+                            "title": "মাল্টি-লোকেশন লোকাল এসইও",
+                            "text": "একটি <b>৫০+ শাখার ডেন্টাল ক্লিনিকের</b> জন্য গুগল বিজনেস প্রোফাইল অপ্টিমাইজ করেছি, যার ফলে লোকাল ম্যাপ প্যাক ভিজিবিলিটি এবং ফোন কল ২০০% বৃদ্ধি পেয়েছে।",
+                            "tags": ["লোকাল এসইও", "জিএমবি", "ম্যাপস"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
