@@ -1,0 +1,77 @@
+/**
+ * @author Rubel Mondol
+ * @description Michael (Michael Özkan style) theme colors.
+ */
+
+@import "theme-variables-builder";
+
+$primary: #80DFFF; 
+$secondary: #94a3b8; 
+$dark: #0f172a; 
+$danger: #fca5a5;
+$muted: #64748b;
+
+$base-bg: #0c0c0c; 
+$base-bg-light: #1e293b; 
+$base-bg-dark: #020617;
+
+$texts: #f1f5f9;
+$texts-inverted: #0f172a;
+
+$base-container-bg: #111827;
+$base-popover-bg: #030712;
+$base-boards: #1f2937;
+$base-info-badges: #374151;
+$empty: #030712;
+$empty-accent: #0f172a;
+
+$borders: #1e293b;
+$scrollbar-track: #020617;
+$scrollbar-thumb: #334155;
+
+[data-theme="michael"] {
+    @include build-theme(
+        // Theme Config...
+        /** DARK MODE: **/                  true,
+
+        // Base Colors...
+        /** PRIMARY: **/                    $primary,
+        /** SECONDARY: **/                  $secondary,
+        /** DARK: **/                       $dark,
+        /** DANGER: **/                     $danger,
+        /** MUTED: **/                      $muted,
+
+        // Main Layout Colors...
+        /** BG: **/                         $base-bg,
+        /** BG CONTRAST: **/                $base-bg-light,
+        /** BG CONTRAST DARKEN:**/          $base-bg-dark,
+        /** TEXTS: **/                      $texts,
+        /** TEXTS (INVERTED): **/           $texts-inverted,
+
+        // Nav
+        /** NAV MOBILE BG: **/              $empty-accent,
+        /** NAV MOBILE: **/                 $texts,
+        /** NAV MOBILE BORDER: **/          $borders,
+
+        /** NAV MOBILE HOVER BG: **/        $empty-accent,
+        /** NAV MOBILE HOVER: **/           $primary,
+
+        /** NAV MOBILE SELECTED BG: **/     $primary,
+        /** NAV MOBILE SELECTED: **/        $texts-inverted,
+        /** NAV MOBILE SELECTED BORDER: **/ $primary,
+
+        // Main Layout Elements...
+        /** SECTION BG: **/                 $base-container-bg,
+        /** CARD BG: **/                    $base-container-bg,
+        /** POPUPS BG: **/                  $base-popover-bg,
+        /** BOARDS: **/                     $base-boards,
+        /** INFO BADGE BG: **/              $base-info-badges,
+        /** INFO BADGE **/                  $texts,
+        /** EMPTY **/                       $empty,
+
+        // Other Colors...
+        /** DEFAULT BORDERS: **/            $borders,
+        /** SCROLLBAR TRACK: **/            $scrollbar-track,
+        /** SCROLLBAR THUMB: **/            $scrollbar-thumb,
+    );
+}

@@ -1,0 +1,171 @@
+{
+    "developerSettings": {
+        "debugMode": false,
+        "fakeEmailRequests": false,
+        "stayOnThePreloaderScreen": false,
+        "version": "2.0.3"
+    },
+
+    "preloaderSettings": {
+        "enabled": true,
+        "title": "Welcome to my <strong>Portfolio</strong>",
+        "subtitle": "by Rubel Mondol",
+        "logoOffset": {
+            "right": 14,
+            "top": 2,
+            "bottom": 0
+        }
+    },
+
+    "templateSettings": {
+        "animatedCursorEnabled": true,
+        "backgroundStyle": "animated",
+        "defaultLanguageId": "en",
+        "defaultThemeId": "dark",
+        "fullscreenEnabled": true,
+        "showSpinnerOnThemeChange": false,
+        "googleAnalyticsId": ""
+    },
+
+    "supportedLanguages": [
+        {
+            "name": "English",
+            "id": "en",
+            "flagUrl": "images/flags/en-us.png"
+        },
+        {
+            "name": "Español",
+            "id": "es",
+            "flagUrl": "images/flags/es.png"
+        },
+        {
+            "name": "Français",
+            "id": "fr",
+            "flagUrl": "images/flags/fr.png"
+        },
+        {
+            "name": "한국어",
+            "id": "ko",
+            "flagUrl": "images/flags/ko.png"
+        },
+                {
+            "name": "Bengali",
+            "id": "bn",
+            "flagUrl": "images/flags/bn.png"
+        }
+    ],
+
+    "supportedThemes": [
+        {
+            "id": "dark",
+            "icon": "fa-solid fa-moon",
+            "dark": true,
+            "locales": {
+                "en": {"name": "Dark Mode"},
+                "es": {"name": "Modo Oscuro"},
+                "fr": {"name": "Mode Sombre"},
+                "ko": {"name": "다크 모드"},
+                "bn": {"name": "ডার্ক মোড"}
+            }
+        },
+        {
+            "id": "light",
+            "icon": "fa-solid fa-sun",
+            "dark": false,
+            "locales": {
+                "en": {"name": "Light Mode"},
+                "es": {"name": "Modo Claro"},
+                "fr": {"name": "Mode Clair"},
+                "ko": {"name": "라이트 모드"},
+                "bn": {"name": "লাইট মোড"}
+            }
+        },
+        {
+            "id": "sepia",
+            "icon": "fa-solid fa-book-open",
+            "dark": true,
+            "locales": {
+                "en": {"name": "Sepia Mode"},
+                "es": {"name": "Modo Sepia"},
+                "fr": {"name": "Mode Sépia"},
+                "ko": {"name": "세피아 모드"},
+                "bn": {"name": "সেপিয়া মোড"}
+            }
+        },
+        {
+            "id": "blue",
+            "icon": "fa-solid fa-droplet",
+            "dark": true,
+            "locales": {
+                "en": {"name": "Blue Mode"},
+                "es": {"name": "Modo Azul"},
+                "fr": {"name": "Mode Bleu"},
+                "ko": {"name": "블루 모드"},
+                "bn": {"name": "ব্লু মোড"}
+            }
+        },
+        {
+            "id": "pink",
+            "icon": "fa-solid fa-heart",
+            "dark": true,
+            "locales": {
+                "en": {"name": "Emily Mode"},
+                "es": {"name": "Modo Emily"},
+                "fr": {"name": "Mode Emily"},
+                "ko": {"name": "에밀리 모드"},
+                "bn": {"name": "এমিলি মোড"}
+            }
+        },
+        {
+            "id": "michael",
+            "icon": "fa-solid fa-code",
+            "dark": true,
+            "locales": {
+                "en": {"name": "Michael Mode"},
+                "es": {"name": "Modo Michael"},
+                "fr": {"name": "Mode Michael"},
+                "ko": {"name": "마이클 모드"},
+                "bn": {"name": "মাইকেল মোড"}
+            }
+        }
+    ],
+
+    "consoleMessageForDevelopers": {
+        "title": "👋 Hello there! Inspecting the code?",
+        "items": [
+            {
+                "description": "Welcome to the portfolio of Rubel Mondol – Professional SEO Specialist.",
+                "list": [],
+                "listStyle": "none"
+            },
+            {
+                "description": "I specialize in helping businesses grow with data-driven SEO, technical optimization, and content strategy.",
+                "list": [],
+                "listStyle": "none"
+            },
+            {
+                "description": "This site is built with modern web technologies including:",
+                "list": [
+                    "Next.js 15 (React Framework)",
+                    "Bootstrap 5",
+                    "Sass",
+                    "Swiper & Smooth Scrollbar"
+                ],
+                "listStyle": "bulleted"
+            },
+            {
+                "description": "Let's connect and grow your business:",
+                "list": [
+                    "Website: https://rubeltech.com",
+                    "Email: contact@rubeltech.com",
+                    "GitHub: https://github.com/rubeltechcom"
+                ],
+                "listStyle": "bulleted"
+            }
+        ]
+    },
+
+    "imagesToCache": [
+        "images/pictures/profile-picture.jpg"
+    ]
+}

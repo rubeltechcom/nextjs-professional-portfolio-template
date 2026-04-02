@@ -1,0 +1,154 @@
+/**
+ * @author Ryan Balieiro
+ * @description Mixin to build theme color scheme variables.
+ */
+
+@use "sass:color";
+@use "sass:math";
+
+$theme-contrast-steps: (1%, 2%, 3%, 4%, 5%, 6%, 7%, 8%, 9%, 10%, 12.5%, 15%, 17.5%, 20%, 25%, 30%);
+
+@mixin build-theme(
+    $isDarkMode,
+
+    $theme-primary,
+    $theme-secondary,
+    $theme-dark,
+    $theme-danger,
+    $theme-muted,
+
+    $theme-background,
+    $theme-background-contrast,
+    $theme-background-contrast-darken,
+    $theme-texts,
+    $theme-texts-inv,
+
+    $theme-mobile-nav-background,
+    $theme-mobile-nav,
+    $theme-mobile-nav-border,
+    $theme-mobile-nav-hover-background,
+    $theme-mobile-nav-hover,
+    $theme-mobile-nav-selected-background,
+    $theme-mobile-nav-selected,
+    $theme-mobile-nav-selected-border,
+
+    $theme-section-background,
+    $theme-card-background,
+    $theme-pop-ups-background,
+    $theme-boards-background,
+    $theme-info-badge-background,
+    $theme-info-badge,
+    $theme-empty,
+
+    $theme-standard-borders,
+    $theme-scrollbar-track,
+    $theme-scrollbar-thumb
+) {
+    --theme-primary: #{$theme-primary};
+    --theme-secondary: #{$theme-secondary};
+    --theme-dark: #{$theme-dark};
+    --theme-danger: #{$theme-danger};
+    --theme-muted: #{$theme-muted};
+
+    --theme-background: #{$theme-background};
+    --theme-background-contrast: #{$theme-background-contrast};
+    --theme-background-contrast-darken: #{$theme-background-contrast-darken};
+    --theme-texts: #{$theme-texts};
+    --theme-texts-inv: #{$theme-texts-inv};
+
+    --theme-mobile-nav-background: #{$theme-mobile-nav-background};
+    --theme-mobile-nav: #{$theme-mobile-nav};
+    --theme-mobile-nav-border: #{$theme-mobile-nav-border};
+    --theme-mobile-nav-hover-background: #{$theme-mobile-nav-hover-background};
+    --theme-mobile-nav-hover: #{$theme-mobile-nav-hover};
+    --theme-mobile-nav-selected-background: #{$theme-mobile-nav-selected-background};
+    --theme-mobile-nav-selected: #{$theme-mobile-nav-selected};
+    --theme-mobile-nav-selected-border: #{$theme-mobile-nav-selected-border};
+
+    --theme-section-background: #{$theme-section-background};
+    --theme-card-background: #{$theme-card-background};
+    --theme-card-background-opacity: #{color.adjust($theme-card-background, $alpha: -0.2)};
+
+    --theme-standard-borders: #{$theme-standard-borders};
+    --theme-pop-ups-background: #{$theme-pop-ups-background};
+    --theme-boards-background: #{$theme-boards-background};
+    --theme-info-badge-background: #{$theme-info-badge-background};
+    --theme-info-badge: #{$theme-info-badge};
+    --theme-empty: #{$theme-empty};
+
+    --theme-scrollbar-track: #{$theme-scrollbar-track};
+    --theme-scrollbar-thumb: #{$theme-scrollbar-thumb};
+
+    @if($isDarkMode) {
+        --theme-links: #{color.adjust($theme-primary, $lightness: 5%)};
+        --theme-links-hover: #{color.adjust($theme-primary, $lightness: 10%)};
+
+        --theme-card-background-accent: #{color.adjust($theme-card-background, $lightness: 2%)};
+        --theme-boards-background-accent: #{color.adjust($theme-boards-background, $lightness: -2%)};
+        --theme-boards-background-accent-inv: #{color.adjust($theme-boards-background, $lightness: 1%)};
+        --theme-section-background-accent: #{color.adjust($theme-section-background, $lightness: 3%)};
+        --theme-section-background-accent-inv: #{color.adjust($theme-section-background, $lightness: -3%)};
+
+        --theme-standard-borders-accent: #{color.adjust($theme-standard-borders, $lightness: 3%)};
+        --theme-standard-borders-accent-2: #{color.adjust($theme-standard-borders, $lightness: 5%)};
+
+        --theme-timeline-line-color: #{color.adjust($theme-boards-background, $lightness: 2%)};
+        --theme-timeline-line-color-accent: #{color.adjust($theme-boards-background, $lightness: -5%)};
+
+        --theme-opacity-border: #{color.adjust($theme-secondary, $alpha: -0.85)};
+        --theme-opacity-border-light: #{color.adjust($theme-secondary, $alpha: -0.95)};
+        --theme-opacity-border-accent: #{color.adjust($theme-secondary, $alpha: -0.65)};
+        --theme-invert-filter: 1;
+    }
+    @else {
+        --theme-links: #{color.adjust($theme-primary, $lightness: -5%)};
+        --theme-links-hover: #{color.adjust($theme-primary, $lightness: -10%)};
+
+        --theme-card-background-accent: #{color.adjust($theme-card-background, $lightness: -2%)};
+        --theme-boards-background-accent: #{color.adjust($theme-boards-background, $lightness: -2%)};
+        --theme-boards-background-accent-inv: #{color.adjust($theme-boards-background, $lightness: 0%)};
+        --theme-section-background-accent: #{color.adjust($theme-section-background, $lightness: -5%)};
+        --theme-section-background-accent-inv: #{color.adjust($theme-section-background, $lightness: 5%)};
+
+        --theme-standard-borders-accent: #{$theme-section-background};
+        --theme-standard-borders-accent-2: #{color.adjust($theme-standard-borders, $lightness: -1%)};
+
+        --theme-timeline-line-color: #{color.adjust($theme-boards-background, $lightness: -2%)};
+        --theme-timeline-line-color-accent: #{color.adjust($theme-boards-background, $lightness: 1%)};
+
+        --theme-opacity-border: #{color.adjust(black, $alpha: -0.85)};
+        --theme-opacity-border-light: #{color.adjust(black, $alpha: -0.95)};
+        --theme-opacity-border-accent: #{color.adjust(black, $alpha: -0.7)};
+        --theme-invert-filter: 0;
+    }
+
+    @for $i from 1 through 16 {
+        --theme-standard-borders-#{$i}: #{color.adjust($theme-standard-borders, $alpha: -(1 - math.div($i, 16)))};
+
+        @if($isDarkMode) {
+            --theme-background-darken-#{$i}: #{color.adjust($theme-background, $lightness: -(nth($theme-contrast-steps, $i)))};
+            --theme-texts-#{$i}: #{color.adjust($theme-texts, $lightness: -(nth($theme-contrast-steps, $i) * 2))};
+            --theme-primary-#{$i}: #{color.adjust($theme-primary, $lightness: -(nth($theme-contrast-steps, $i)))};
+            --theme-secondary-#{$i}: #{color.adjust($theme-secondary, $lightness: nth($theme-contrast-steps, $i))};
+        }
+        @else {
+            --theme-background-darken-#{$i}: #{color.adjust($theme-background, $lightness: nth($theme-contrast-steps, $i))};
+            --theme-texts-#{$i}: #{color.adjust($theme-texts, $lightness: nth($theme-contrast-steps, $i) * 2)};
+            --theme-primary-#{$i}: #{color.adjust($theme-primary, $lightness: nth($theme-contrast-steps, $i))};
+            --theme-secondary-#{$i}: #{color.adjust($theme-secondary, $lightness: -(nth($theme-contrast-steps, $i)))};
+        }
+    }
+
+    @if($isDarkMode) {
+        --theme-texts-light: var(--theme-texts-5);
+        --theme-texts-light-2: var(--theme-secondary);
+        --theme-texts-light-3: #{color.adjust($theme-secondary, $lightness: -10%)};
+        --theme-texts-light-4: #{color.adjust($theme-secondary, $lightness: -15%)};
+    }
+    @else {
+        --theme-texts-light: var(--theme-texts-5);
+        --theme-texts-light-2: var(--theme-secondary);
+        --theme-texts-light-3: #{color.adjust($theme-secondary, $lightness: 5%)};
+        --theme-texts-light-4: #{color.adjust($theme-secondary, $lightness: 10%)};
+    }
+}

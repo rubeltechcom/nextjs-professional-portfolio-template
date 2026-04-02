@@ -1,0 +1,16 @@
+{
+  "name": "Rubel Mondol | SEO Specialist Portfolio",
+  "short_name": "Rubel SEO",
+  "description": "Professional SEO specialist helping businesses grow with data-driven SEO, technical optimization, and content strategy.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "/images/svg/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
