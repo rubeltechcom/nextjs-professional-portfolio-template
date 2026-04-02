@@ -61,14 +61,17 @@
                 {
                     "id": 1,
                     "categoryId": "category_growth",
-                    "img": "",
+                    "img": "images/pictures/portfolio-project-logo-1.png",
                     "faIcon": "fa-solid fa-chart-line",
                     "faIconColors": {"bg": "#E3F2FD", "fill": "#1976D2"},
                     "preview": {
                         "links": [
                             {"href": "https://example.com/case-study-1", "tooltipString": "View Case Study", "faIcon": "fa-solid fa-file-lines"}
                         ],
-                        "screenshots": [],
+                        "screenshots": [
+                            "images/pictures/screenshot-demo-landscape-1.png",
+                            "images/pictures/screenshot-demo-landscape-2.png"
+                        ],
                         "screenshotsAspectRatio": "16:9",
                         "youtubeVideo": ""
                     },
@@ -88,14 +91,17 @@
                 {
                     "id": 2,
                     "categoryId": "category_technical",
-                    "img": "",
+                    "img": "images/pictures/portfolio-project-logo-2.png",
                     "faIcon": "fa-solid fa-gears",
                     "faIconColors": {"bg": "#F3E5F5", "fill": "#7B1FA2"},
                     "preview": {
                         "links": [
                             {"href": "https://example.com/technical-audit", "tooltipString": "View Audit Sample", "faIcon": "fa-solid fa-magnifying-glass"}
                         ],
-                        "screenshots": [],
+                        "screenshots": [
+                            "images/pictures/screenshot-demo-landscape-3.png",
+                            "images/pictures/screenshot-demo-landscape-4.png"
+                        ],
                         "screenshotsAspectRatio": "16:9",
                         "youtubeVideo": ""
                     },
@@ -115,14 +121,16 @@
                 {
                     "id": 3,
                     "categoryId": "category_content",
-                    "img": "",
+                    "img": "images/pictures/portfolio-project-logo-3.png",
                     "faIcon": "fa-solid fa-pen-nib",
                     "faIconColors": {"bg": "#FFF3E0", "fill": "#E65100"},
                     "preview": {
                         "links": [
                             {"href": "https://example.com/content-strategy", "tooltipString": "View Strategy", "faIcon": "fa-solid fa-lightbulb"}
                         ],
-                        "screenshots": [],
+                        "screenshots": [
+                            "images/pictures/screenshot-demo-landscape-5.png"
+                        ],
                         "screenshotsAspectRatio": "16:9",
                         "youtubeVideo": ""
                     },
@@ -142,14 +150,17 @@
                 {
                     "id": 4,
                     "categoryId": "category_growth",
-                    "img": "",
+                    "img": "images/pictures/portfolio-project-logo-4.png",
                     "faIcon": "fa-solid fa-map-location-dot",
                     "faIconColors": {"bg": "#E8F5E9", "fill": "#2E7D32"},
                     "preview": {
                         "links": [
                             {"href": "https://example.com/local-seo", "tooltipString": "View Local Case", "faIcon": "fa-solid fa-location-dot"}
                         ],
-                        "screenshots": [],
+                        "screenshots": [
+                            "images/pictures/screenshot-demo-square-1.jpg",
+                            "images/pictures/screenshot-demo-square-2.jpg"
+                        ],
                         "screenshotsAspectRatio": "16:9",
                         "youtubeVideo": ""
                     },

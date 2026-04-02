@@ -14,7 +14,7 @@ const nextConfig = {
     reactStrictMode: true,
     transpilePackages: ['swiper', 'smooth-scrollbar'],
     sassOptions: {
-        api: 'modern-compiler',
+        api: 'legacy',
         includePaths: [path.join(__dirname, 'src'), path.join(__dirname, 'src/styles')],
         quietDeps: true,
     },

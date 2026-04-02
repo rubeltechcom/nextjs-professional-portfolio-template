@@ -46,7 +46,7 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
+                    "img": "images/pictures/timeline-place-sapphire-studio.png",
                     "faIcon": "fa-solid fa-seedling",
                     "faIconColors": {"bg": "", "fill": "#4CAF50"},
                     "dateStart": {"year": 2015, "month": 1},
@@ -82,7 +82,7 @@
                 },
                 {
                     "id": 2,
-                    "img": "",
+                    "img": "images/pictures/timeline-place-adobe.png",
                     "faIcon": "fa-solid fa-magnifying-glass-chart",
                     "faIconColors": {"bg": "", "fill": "#2196F3"},
                     "dateStart": {"year": 2017, "month": 6},
@@ -118,7 +118,7 @@
                 },
                 {
                     "id": 3,
-                    "img": "",
+                    "img": "images/pictures/timeline-place-coursera.png",
                     "faIcon": "fa-solid fa-chart-line",
                     "faIconColors": {"bg": "", "fill": "#9C27B0"},
                     "dateStart": {"year": 2021, "month": 1},
@@ -154,7 +154,7 @@
                 },
                 {
                     "id": 4,
-                    "img": "",
+                    "img": "images/pictures/timeline-place-mit.png",
                     "faIcon": "fa-solid fa-crown",
                     "faIconColors": {"bg": "#FFD700", "fill": "#000"},
                     "dateStart": {"year": 2023, "month": 6},

@@ -11,9 +11,11 @@ function NumberAnimation({ targetValue, id, initialValue = 0, updateDelay = 10, 
     useEffect(() => {
         scheduler.clearAllWithTag(id)
 
-        const step = Math.floor((targetValue - currentValue) / updateDelay)
+        let step = (targetValue - currentValue) / updateDelay
+        if (step === 0 && targetValue > currentValue) step = 1
+        if (step === 0 && targetValue < currentValue) step = -1
 
-        let value = currentValue
+        let exactValue = currentValue
         let lastTickTime = new Date().getTime()
         let tickInterval = 1000/30
 
@@ -23,15 +25,19 @@ function NumberAnimation({ targetValue, id, initialValue = 0, updateDelay = 10, 
             lastTickTime = now
 
             const dt = elapsed / tickInterval
-            value += Math.round(step * dt)
+            exactValue += step * dt
+            
+            let displayVal = Math.round(exactValue)
 
-            setCurrentValue(value)
-
-            if(value >= targetValue) {
+            if((step >= 0 && displayVal >= targetValue) || (step < 0 && displayVal <= targetValue) || step === 0) {
                 setCurrentValue(targetValue)
                 scheduler.clearAllWithTag(id)
+            } else {
+                setCurrentValue(displayVal)
             }
         }, tickInterval, id)
+        
+        return () => scheduler.clearAllWithTag(id)
     }, [targetValue])
 
     return (

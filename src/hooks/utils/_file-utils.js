@@ -46,10 +46,11 @@ export const _fileUtils = {
      */
     resolvePath: (path) => {
         if(!path) return path
-        if(path.startsWith("http")) return path
+        if(path.startsWith("http") || path.startsWith("data:")) return path
 
         const baseUrl = _fileUtils.BASE_URL || ""
-        const fullPath = baseUrl + path
+        const normalizedPath = path.startsWith("/") ? path : `/${path}`
+        const fullPath = baseUrl + normalizedPath
         return fullPath.replace(/(^|[^:])\/\//g, "$1/")
     },
 }

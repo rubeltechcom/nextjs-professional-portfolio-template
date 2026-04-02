@@ -7,6 +7,7 @@ import {useViewport} from "@/providers/ViewportProvider.jsx"
 import {useConstants} from "@/hooks/constants.js"
 import AvatarView from "@/components/generic/AvatarView.jsx"
 import {useLocation} from "@/providers/LocationProvider.jsx"
+import {useNavigation} from "@/providers/NavigationProvider.jsx"
 import NumberAnimation from "@/components/generic/NumberAnimation.jsx"
 
 /**
@@ -101,14 +102,12 @@ function ArticleSkillsItem({ itemWrapper }) {
  */
 function ArticleSkillsItemInfo({ itemWrapper }) {
     const utils = useUtils()
-    const location = useLocation()
+    const navigation = useNavigation()
 
     const percentage = itemWrapper.percentage
-    const initialPercentage = location.getActiveSection()?.id === itemWrapper.articleWrapper.sectionId ?
-        percentage :
-        0
-
-    const [animationPercentage, setAnimationPercentage] = useState(initialPercentage)
+    const [animationPercentage, setAnimationPercentage] = useState(0)
+    const [isVisible, setIsVisible] = useState(false)
+    const ref = React.useRef(null)
 
     const level = itemWrapper.locales.level
     const description = itemWrapper.locales.text
@@ -127,11 +126,42 @@ function ArticleSkillsItemInfo({ itemWrapper }) {
     if(!experienceTime) descriptionClass += ` mt-1`
 
     useEffect(() => {
-        setAnimationPercentage(initialPercentage)
-    }, [location.getActiveSection()])
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true)
+                } else {
+                    setIsVisible(false)
+                }
+            },
+            { threshold: 0.1 }
+        )
+
+        if (ref.current) {
+            observer.observe(ref.current)
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current)
+            }
+        }
+    }, [])
+
+    useEffect(() => {
+        const isActive = navigation.targetSection?.id === itemWrapper.articleWrapper.sectionId
+        if (isActive && isVisible) {
+            const timeoutId = setTimeout(() => {
+                setAnimationPercentage(percentage)
+            }, 50)
+            return () => clearTimeout(timeoutId)
+        } else {
+            setAnimationPercentage(0)
+        }
+    }, [navigation.targetSection?.id, itemWrapper.articleWrapper.sectionId, percentage, isVisible])
 
     return (
-        <div className={`article-skills-item-info`}>
+        <div className={`article-skills-item-info`} ref={ref}>
             <div className={`article-skills-item-title text-5`}>
                 <div className={`article-skills-item-title-left-column`}>
                     <span className={`article-skills-item-title-main`}
@@ -147,7 +177,8 @@ function ArticleSkillsItemInfo({ itemWrapper }) {
                     {percentage && (
                         <NumberAnimation className={`article-skills-item-title-percentage text-3`}
                                          id={`article-skills-item-title-percentage-${itemWrapper.uniqueId}`}
-                                         initialValue={initialPercentage}
+                                         initialValue={0}
+                                         updateDelay={30}
                                          targetValue={animationPercentage}
                                          format={`{n}%`}/>
                     )}

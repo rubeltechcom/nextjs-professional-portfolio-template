@@ -46,7 +46,7 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
+                    "img": "images/pictures/timeline-place-university-paris.png",
                     "faIcon": "fa-solid fa-graduation-cap",
                     "faIconColors": {"bg": "", "fill": "#3F51B5"},
                     "dateStart": {"year": 2011, "month": 1},
@@ -74,7 +74,7 @@
                 },
                 {
                     "id": 2,
-                    "img": "",
+                    "img": "images/pictures/timeline-place-udacity.png",
                     "faIcon": "fa-solid fa-certificate",
                     "faIconColors": {"bg": "", "fill": "#FF9800"},
                     "dateStart": {"year": 2016, "month": 1},
@@ -102,7 +102,7 @@
                 },
                 {
                     "id": 3,
-                    "img": "",
+                    "img": "images/pictures/timeline-place-harvard.png",
                     "faIcon": "fa-solid fa-chart-simple",
                     "faIconColors": {"bg": "", "fill": "#4CAF50"},
                     "dateStart": {"year": 2017, "month": 1},

@@ -97,7 +97,10 @@ function OptionPickerButtonMenu({ availableOptions, selectedOptionId, onClick })
     )
 }
 
+import {useUtils} from "@/hooks/utils.js"
+
 function OptionPickerButtonPickerIcon({ option, size }) {
+    const utils = useUtils()
     const sizeClass = `btn-option-picker-icon-size-${size}`
     const willRenderImage = option.img
     const willRenderFaIcon = !willRenderImage
@@ -105,7 +108,7 @@ function OptionPickerButtonPickerIcon({ option, size }) {
     return (
         <div className={`btn-option-picker-icon ${sizeClass}`}>
             {willRenderImage && (
-                <img src={option.img}
+                <img src={utils.file.resolvePath(option.img)}
                      alt={option.label}
                      className={`img`}/>
             )}
